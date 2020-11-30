@@ -10,8 +10,7 @@ class LyricsGetter(object):
         response = requests.get(f"https://www.azlyrics.com/lyrics/{no_sym_art}/{no_sym_song}.html")
         parsed = BeautifulSoup(response.text)
         res = parsed.find("div", {"class": "main-page"}).text
-        if song in res:
-            return res
+        return res
 
     def _remove_symbols_n_spaces(self, artist):
         res = artist.replace(" & ", "")

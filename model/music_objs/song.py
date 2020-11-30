@@ -1,7 +1,7 @@
 class Song(object):
-    def __init__(self, obj, file):
+    def __init__(self, obj):
         self._obj = obj
-        self._file = file
+        self._file = None
 
     @property
     def Name(self):
@@ -26,3 +26,6 @@ class Song(object):
     @property
     def Lyrics(self):
         return self._obj["lyrics"]
+
+    def set_file(self, file):
+        self._file = file

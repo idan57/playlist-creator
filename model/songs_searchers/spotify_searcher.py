@@ -4,7 +4,10 @@ import requests
 from spotipy import SpotifyClientCredentials, Spotify
 
 from model.lyrics_getter.lyrics_getter import LyricsGetter
-from model.songs_rapid_api_connector.music_searcher_interface import IMusicSearcher
+from model.music_objs.album import Album
+from model.music_objs.artist import Artist
+from model.music_objs.song import Song
+from model.songs_searchers.music_searcher_interface import IMusicSearcher
 
 
 class SpotifySearcher(IMusicSearcher):
@@ -17,12 +20,16 @@ class SpotifySearcher(IMusicSearcher):
         tracks = self._sp.search(song, limit=50)["tracks"]["items"]
         parsed = self._parse_artist(artist)
         res = None
+        should_stop = False
         for tr in tracks:
             artists = tr["artists"]
             for ar in artists:
                 if artist.lower() in ar["name"].lower():
                     res = tr
+                    should_stop = True
                     break
+            if should_stop:
+                break
             if self._in_artists(parsed, artists):
                 res = tr
                 break
@@ -30,7 +37,7 @@ class SpotifySearcher(IMusicSearcher):
             self._set_genre(res, artist)
             lyrics = lyric_getter.get(artist, song)
             res["lyrics"] = lyrics
-            return res
+            return Song(res)
 
     def get_album_info(self, album, artist):
         tracks = self._sp.search(album, limit=50)["tracks"]["items"]
@@ -46,7 +53,7 @@ class SpotifySearcher(IMusicSearcher):
                 break
 
         self._set_genre(res, artist)
-        return res
+        return Album(res)
 
     def get_artist_info(self, artist):
         tracks = self._sp.search(artist, limit=50)["tracks"]["items"]
@@ -59,7 +66,7 @@ class SpotifySearcher(IMusicSearcher):
                     break
 
         self._set_genre(res, artist)
-        return res
+        return Artist(res)
 
     def _get_response(self, action):
         url = f"https://itunes.apple.com/search?term={action}"
@@ -83,7 +90,7 @@ class SpotifySearcher(IMusicSearcher):
                 break
 
     def _parse_artist(self, artist):
-        res = artist.lower()
+        res = artist.strip().lower()
         return [f.strip() for r in res.split("&") for t in r.split(",") for f in t.split("x")]
 
     def _in_artists(self, parsed, artists):
