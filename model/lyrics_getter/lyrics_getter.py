@@ -17,4 +17,5 @@ class LyricsGetter(object):
         res = res.replace(" ", "")
         res = res.replace(" x ", "")
         res = res.replace(", ", "")
+        res = res.replace("\\", "")
         return res

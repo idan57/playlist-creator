@@ -13,3 +13,7 @@ class Artist(object):
     @property
     def Genre(self):
         return self._obj["genre"]
+
+    @property
+    def ID(self):
+        return self._obj["id"]

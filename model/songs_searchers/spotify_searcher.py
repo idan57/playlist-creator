@@ -13,6 +13,7 @@ from model.songs_searchers.music_searcher_interface import IMusicSearcher
 class SpotifySearcher(IMusicSearcher):
     def __init__(self, client_id, client_secret):
         client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
+        self._id = client_id
         self._sp = Spotify(auth_manager=client_credentials_manager)
 
     def get_song_info(self, song, artist):
@@ -67,6 +68,51 @@ class SpotifySearcher(IMusicSearcher):
 
         self._set_genre(res, artist)
         return Artist(res)
+
+    def get_similar_artists(self, artist):
+        artist_obj = self.get_artist_info(artist)
+        similar_artists = self._sp.artist_related_artists(artist_obj.ID)
+        res = []
+        for sim_ar in similar_artists:
+            res += [Artist(sim_ar)]
+
+        return res
+
+    def get_artists_top_tracks(self, artist, country="US"):
+        artist_obj = self.get_artist_info(artist)
+        top_tracks = self._sp.artist_top_tracks(artist_obj.ID, country=country)
+        res = []
+        for song in top_tracks:
+            res += [Song(song)]
+
+        return res
+
+    def get_song_analysis(self, song, artist):
+        song_obj = self.get_song_info(song, artist)
+        analysis = self._sp.audio_analysis(song_obj.ID)
+        return analysis
+
+    def get_similar_tracks(self, song, artist):
+        lyric_getter = LyricsGetter()
+        song_obj = self.get_song_info(song, artist)
+        artist_obj = self.get_artist_info(artist)
+        access_token = self._sp.auth_manager.token_info["access_token"]
+        headers = {
+            "Authorization": f"Bearer {access_token}",
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+        }
+        url = f"https://api.spotify.com/v1/recommendations?seed_artists={artist_obj.ID}&seed_tracks={song_obj.ID}"
+        tracks = json.loads(requests.request("GET", url, headers=headers).text)["tracks"]
+        res = []
+        for track in tracks:
+            artist_n = track["artists"][0]["name"]
+            self._set_genre(track, artist_n)
+            track["duration"] = track["duration_ms"] / 1000
+            lyrics = lyric_getter.get(artist_n, track["name"])
+            track["lyrics"] = lyrics
+            res += [Song(track)]
+        return res
 
     def _get_response(self, action):
         url = f"https://itunes.apple.com/search?term={action}"

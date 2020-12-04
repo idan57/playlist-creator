@@ -27,5 +27,9 @@ class Song(object):
     def Lyrics(self):
         return self._obj["lyrics"]
 
+    @property
+    def ID(self):
+        return self._obj["id"]
+
     def set_file(self, file):
         self._file = file
