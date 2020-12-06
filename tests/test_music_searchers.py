@@ -9,8 +9,8 @@ def test_last_fm_searcher():
     client_id = '03e69fa5ec5d479a82bb066e019a722b'
     client_secret = '0ae6f5bb823a4ac281dc1b7c07180706'
     searcher = SpotifySearcher(client_id, client_secret)
-    for song in songs:
-        res = searcher.get_similar_tracks(song["name"], song["artist"])
+    #for song in songs:
+    res = searcher.get_song_info("Nothing Else Matters", "Metallica")
 
     assert True
 

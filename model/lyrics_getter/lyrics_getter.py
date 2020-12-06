@@ -1,21 +1,15 @@
-import requests
-from bs4 import BeautifulSoup
+from lyrics_extractor import SongLyrics
 
 
 class LyricsGetter(object):
     def get(self, artist, song):
-        no_sym_art = self._remove_symbols_n_spaces(artist.lower())
-        no_sym_song = self._remove_symbols_n_spaces(song.lower())
-
-        response = requests.get(f"https://www.azlyrics.com/lyrics/{no_sym_art}/{no_sym_song}.html")
-        parsed = BeautifulSoup(response.text)
-        res = parsed.find("div", {"class": "main-page"}).text
-        return res
+        songs_lyrics = SongLyrics("AIzaSyAxFaUFClQjKEXwpzGM7mor9-Nl2OqabH8", "ceb5297d59ef47ff8")
+        res = songs_lyrics.get_lyrics(f"{artist} - {song}")
+        return res["lyrics"]
 
     def _remove_symbols_n_spaces(self, artist):
-        res = artist.replace(" & ", "")
-        res = res.replace(" ", "")
-        res = res.replace(" x ", "")
-        res = res.replace(", ", "")
+        res = artist.replace("&", "")
+        res = res.replace("x", "")
+        res = res.replace(",", "")
         res = res.replace("\\", "")
         return res
