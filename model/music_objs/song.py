@@ -16,16 +16,12 @@ class Song(object):
         return self._obj["popularity"]
 
     @property
-    def Genre(self):
-        return self._obj["genre"]
+    def Genres(self):
+        return self._obj["genres"]
 
     @property
     def Duration(self):
         return self._file["duration"]
-
-    @property
-    def Lyrics(self):
-        return self._obj["lyrics"]
 
     @property
     def ID(self):

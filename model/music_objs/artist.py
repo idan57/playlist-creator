@@ -11,9 +11,17 @@ class Artist(object):
         return self._obj["href"]
 
     @property
-    def Genre(self):
-        return self._obj["genre"]
+    def Genres(self):
+        return self._obj["genres"]
 
     @property
     def ID(self):
         return self._obj["id"]
+
+    @property
+    def Popularity(self):
+        return self._obj["popularity"]
+
+    @property
+    def NumOfFollowers(self):
+        return self._obj["followers"]["total"]

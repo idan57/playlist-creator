@@ -15,5 +15,5 @@ class Album(object):
         return self._obj["release_date"]
 
     @property
-    def Genre(self):
-        return self._obj["genre"]
+    def Genres(self):
+        return self._obj["genres"]
