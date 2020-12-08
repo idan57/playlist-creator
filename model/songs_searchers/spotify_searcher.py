@@ -66,8 +66,8 @@ class SpotifySearcher(IMusicSearcher):
                 if artist == a["name"]:
                     res = self._sp.artist(a["id"])
                     break
-
-        return Artist(res)
+        if res:
+            return Artist(res)
 
     def get_similar_artists(self, artist, num_of_simillar=20):
         artist_obj = self.get_artist_info(artist)
@@ -117,6 +117,7 @@ class SpotifySearcher(IMusicSearcher):
         return res
 
     def get_recommendations(self, artists_ids=None, songs_ids=None, genres_list=None):
+        recommendations = None
         if songs_ids:
             recommendations = self._sp.recommendations(seed_tracks=songs_ids)
         if artists_ids:
@@ -130,6 +131,8 @@ class SpotifySearcher(IMusicSearcher):
         artist_n = track["artists"][0]["name"]
         track["duration"] = track["duration_ms"] / 1000
         artist_info = self.get_artist_info(artist_n)
+        if not artist_info:
+            return
         track["genres"] = artist_info.Genres
         lock.acquire()
         res += [Song(track)]

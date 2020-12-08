@@ -21,11 +21,20 @@ class Song(object):
 
     @property
     def Duration(self):
+        if not self._file:
+            return self._obj["duration_ms"] / 1000
         return self._file["duration"]
 
     @property
     def ID(self):
         return self._obj["id"]
+
+    @property
+    def Artists(self):
+        res = []
+        for artist in self._obj["artists"]:
+            res += [artist["name"]]
+        return res
 
     def set_file(self, file):
         self._file = file
