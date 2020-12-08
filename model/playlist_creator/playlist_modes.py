@@ -1,3 +1,3 @@
 class PlaylistModes(object):
-    TIME = 0
-    WORDS = 1
+    SONGS = 0
+    ARTISTS = 1
