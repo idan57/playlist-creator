@@ -1,10 +1,8 @@
-import json
-from concurrent.futures.thread import ThreadPoolExecutor
 from threading import Thread, Lock
 
-import requests
 from spotipy import SpotifyClientCredentials, Spotify
 
+from model.logger.spotify_logger import Logger
 from model.music_objs.album import Album
 from model.music_objs.artist import Artist
 from model.music_objs.song import Song
@@ -16,9 +14,12 @@ class SpotifySearcher(IMusicSearcher):
         client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
         self._id = client_id
         self._sp = Spotify(auth_manager=client_credentials_manager)
+        self._lock = Lock()
 
     def get_song_info(self, song, artist):
+        self._lock.acquire()
         tracks = self._sp.search(song, limit=50)["tracks"]["items"]
+        self._lock.release()
         parsed = self._parse_artist(artist)
         res = None
         should_stop = False
@@ -39,7 +40,9 @@ class SpotifySearcher(IMusicSearcher):
             return Song(res)
 
     def get_album_info(self, album, artist):
+        self._lock.acquire()
         tracks = self._sp.search(album, limit=50)["tracks"]["items"]
+        self._lock.release()
         res = None
         parsed = self._parse_artist(artist)
         al = None
@@ -64,31 +67,42 @@ class SpotifySearcher(IMusicSearcher):
             artists = tr["artists"]
             for a in artists:
                 if artist == a["name"]:
+                    self._lock.acquire()
                     res = self._sp.artist(a["id"])
+                    self._lock.release()
                     break
         if res:
             return Artist(res)
 
     def get_similar_artists(self, artist, num_of_simillar=20):
+        Logger().info(f"Getting similar artists for {artist}")
         artist_obj = self.get_artist_info(artist)
+        self._lock.acquire()
         similar_artists = self._sp.artist_related_artists(artist_obj.ID)["artists"]
+        self._lock.release()
         res = []
         parsed = 0
         while True:
             if parsed >= num_of_simillar:
                 break
             sim_ar = similar_artists[0]
+            Logger().info(f"Getting similar artist: {sim_ar['name']}")
             res += [Artist(sim_ar)]
+            self._lock.acquire()
             similar_artists = similar_artists[1:] + self._sp.artist_related_artists(sim_ar["id"])["artists"]
+            self._lock.release()
             parsed += 1
 
         return res
 
     def get_artists_top_tracks(self, artist, country="US"):
         artist_obj = self.get_artist_info(artist)
+        self._lock.acquire()
         top_tracks = self._sp.artist_top_tracks(artist_obj.ID, country=country)
+        self._lock.release()
         res = []
         for song in top_tracks["tracks"]:
+            Logger().info(f"Got top track: {song['name']}")
             song["genres"] = artist_obj.Genres
             res += [Song(song)]
 
@@ -96,10 +110,13 @@ class SpotifySearcher(IMusicSearcher):
 
     def get_song_analysis(self, song, artist):
         song_obj = self.get_song_info(song, artist)
+        self._lock.acquire()
         analysis = self._sp.audio_analysis(song_obj.ID)
+        self._lock.release()
         return analysis
 
     def get_similar_tracks(self, song, artist, num_of_similar=20):
+        Logger().info(f"Getting similar tracks for {artist} - {song}")
         if not num_of_similar:
             return []
         song_obj = self.get_song_info(song, artist)
@@ -118,13 +135,14 @@ class SpotifySearcher(IMusicSearcher):
 
     def get_recommendations(self, artists_ids=None, songs_ids=None, genres_list=None):
         recommendations = None
+        self._lock.acquire()
         if songs_ids:
             recommendations = self._sp.recommendations(seed_tracks=songs_ids)
         if artists_ids:
             recommendations = self._sp.recommendations(seed_artists=artists_ids)
         if genres_list:
             recommendations = self._sp.recommendations(seed_genres=genres_list)
-
+        self._lock.release()
         return recommendations
 
     def _set_similar_song(self, track, res, lock):
@@ -134,6 +152,7 @@ class SpotifySearcher(IMusicSearcher):
         if not artist_info:
             return
         track["genres"] = artist_info.Genres
+        Logger().info(f"Set similar song: {track['artists'][0]['name']} - {track['name']}")
         lock.acquire()
         res += [Song(track)]
         lock.release()
@@ -147,7 +166,9 @@ class SpotifySearcher(IMusicSearcher):
         return False
 
     def _set_genre(self, res, artist):
+        self._lock.acquire()
         artist = self._sp.artist(artist["id"])
+        self._lock.release()
         res["genres"] = artist["genres"]
 
     @classmethod
