@@ -2,6 +2,7 @@ class Song(object):
     def __init__(self, obj):
         self._obj = obj
         self._file = None
+        self._weight = 0
 
     @property
     def Name(self):
@@ -35,6 +36,13 @@ class Song(object):
         for artist in self._obj["artists"]:
             res += [artist["name"]]
         return res
+
+    @property
+    def Weight(self):
+        return self._weight
+
+    def set_weight(self, w):
+        self._weight = w
 
     def set_file(self, file):
         self._file = file
