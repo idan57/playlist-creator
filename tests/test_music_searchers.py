@@ -1,7 +1,13 @@
-from pulp import pulp, LpBinary, LpProblem, LpMaximize
+import datetime
+import logging
+from pathlib import Path
 
+
+from model.playlist_creator.playlist_creator_base import PlaylistCreatorBase
 from model.songs_directory.directory_reader import DerictoryReader
 from model.songs_searchers.spotify_searcher import SpotifySearcher
+
+from gekko import GEKKO
 
 
 def test_last_fm_searcher():
@@ -16,26 +22,47 @@ def test_last_fm_searcher():
         s = searcher.get_song_info(song["name"], song["artist"])
         s.set_file(song)
         res_s += [s]
-        res_a += [searcher.get_artist_info(song["artist"])]
 
-    song_ids = [s.ID for s in res_s]
-    art_ids = [s.ID for s in res_a]
+    p = PlaylistCreatorBase(searcher)
+    p.create_playlist(res_s, min_time=300, max_time=1000)
 
-    res = searcher.get_similar_tracks(song["name"], song["artist"])
-    r = res[0].Duration
-    songs = ["x1", "x2", "x3", "x4", "x5"]
-    ratings = [40, 50, 60, 70, 80]
-    times = [300, 200, 130, 44, 123]
+    #
+    # song_ids = [s.ID for s in res_s]
+    # art_ids = [s.ID for s in res_a]
+    #
+    # res = searcher.get_similar_tracks(song["name"], song["artist"])
+    # r = res[0].Duration
+    # songs = ["x1", "x2", "x3", "x4", "x5"]
+    # ratings = [40, 50, 60, 70, 80]
+    # times = [300, 200, 130, 44, 123]
+    #
+    # m = GEKKO()  # create GEKKO model
+    # songs_vars = [m.Var(lb=0, ub=1, integer=True) for i in range(5)]
+    # songs_vars_sum = m.sum(songs_vars)
+    # weight_params = [1,2,3,4,5]
+    # weight = m.sum([(song_para * s_var) for s_var, song_para in zip(songs_vars, weight_params)])
+    # m.Equation([songs_vars_sum <= 30, ])
+    # m.Maximize(weight)
+    # m.solve()
+    # print(1)
+    # s = [m.Var(lb=0, ub=1, integer=True) for i in range(5)]  # define new variable, default=0
+    # tt = m.sum([s * m.Param(t) for s, t in zip(s, times)])
+    # rr = m.sum([p * m.Param(r) / max(1, sum([v.value for v in s])) for p, r in zip(s, ratings)])
+    # m.Equations([tt >= 100, tt <= 200])  # equations
+    # m.Maximize(rr)
+    # m.options.SOLVER = 1  # APOPT solver
+    # m.solve()
+    # print(1)
+    # s = pulp.LpVariable.dicts("songs", songs, 0, 1, LpBinary)
+    # r_s = pulp.lpSum((son * r) / max(1, sum([1 for p in s.values() if p.value()])) for son, r in zip(s.values(),
+    #                                                                                                  ratings))
+    # t_s = pulp.lpSum(t * son for son, t in zip(s.values(), times))
+    #
+    # prob = LpProblem("MMM", LpMaximize)
+    # prob += r_s
+    # prob += t_s >= 100
+    # prob += t_s <= 200
+    # r = prob.solve()
 
-    s = pulp.LpVariable.dicts("songs", songs, 0, 1, LpBinary)
-    r_s = pulp.lpSum((son * r) / max(1, sum([1 for p in s.values() if p.value()])) for son, r in zip(s.values(),
-                                                                                                     ratings))
-    t_s = pulp.lpSum(t * son for son, t in zip(s.values(), times))
 
-    prob = LpProblem("MMM", LpMaximize)
-    prob += r_s
-    prob += t_s >= 100
-    prob += t_s <= 200
-    r = prob.solve()
-
-    assert True
+test_last_fm_searcher()

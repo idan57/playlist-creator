@@ -58,11 +58,12 @@ class PlaylistCreatorBase(IPlaylistCreator):
     @staticmethod
     def _optimize_weight(songs):
         m = GEKKO()
-        songs_vars = [m.Var(lb=0, ub=1, integer=True) for i in range(len(songs))]
+        songs_vars = [m.Var(lb=0, ub=1, integer=True) for _ in range(len(songs))]
         songs_vars_sum = m.sum(songs_vars)
         weight_params = [m.Param(song.Weight) for song in songs]
         weight = m.sum([song_para * s_var for s_var, song_para in zip(songs_vars, weight_params)])
         m.Equation([songs_vars_sum <= 30, ])
+        m.options.SOLVER = 1
         m.Maximize(weight)
         m.solve()
         return songs_vars
@@ -71,13 +72,13 @@ class PlaylistCreatorBase(IPlaylistCreator):
     def _optimize_popularity(songs, min_time, max_time):
         m = GEKKO()
         songs_vars = [m.Var(lb=0, ub=1, integer=True) for i in range(len(songs))]
-        songs_vars_sum = m.sum(songs_vars)
         popularity_params = [m.Param(song.Popularity) for song in songs]
         duration_params = [m.Param(song.Duration) for song in songs]
-        avg_popularity = m.sum([(song_para * s_var) / max(1, songs_vars_sum)
+        avg_popularity = m.sum([(song_para * s_var) / max(1, sum([song.VALUE.value for song in songs_vars]))
                                 for s_var, song_para in zip(songs_vars, popularity_params)])
         sum_time = m.sum([song_para * s_var for s_var, song_para in zip(songs_vars, duration_params)])
         m.Equation([sum_time <= max_time, sum_time >= min_time])
+        m.options.SOLVER = 1
         m.Maximize(avg_popularity)
         m.solve()
         return songs_vars
@@ -89,7 +90,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
     def _get_songs_after_optimization(cls, songs_vars, songs):
         songs_after_opt = []
         for song, song_var in zip(songs, songs_vars):
-            if song_var.VALUE == 1.0:
+            if song_var.VALUE.value[0] == 1.0:
                 songs_after_opt += [song]
         return songs_after_opt
 

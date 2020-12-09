@@ -19,8 +19,26 @@ class Logger(object):
         msg = f"Playlist Creator - {datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}: {msg}"
 
         self._lock.acquire()
-        log_file = self._save_to.open("a")
-        log_file.write(msg + "\n")
+        self._write_to_file(msg)
         self._lock.release()
 
         print(msg)
+
+    def error(self, msg):
+        msg = "".join(e for e in msg if e.isalnum() or e in self._valid_chars)
+        msg = f"Playlist Creator - {datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}: -------- Exception -------- {msg}"
+
+        self._lock.acquire()
+        self._write_to_file(msg)
+        self._lock.release()
+
+        print(msg)
+
+    def _write_to_file(self, msg):
+        log_file = self._save_to.open("a")
+        for c in msg:
+            try:
+                log_file.write(c)
+            except Exception:
+                continue
+        log_file.write("\n")

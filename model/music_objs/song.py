@@ -41,6 +41,14 @@ class Song(object):
     def Weight(self):
         return self._weight
 
+    @property
+    def LinkToSong(self):
+        return self._obj["external_urls"]["spotify"]
+
+    @property
+    def AvailableMarkets(self):
+        return self._obj["available_markets"]
+
     def set_weight(self, w):
         self._weight = w
 

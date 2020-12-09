@@ -17,3 +17,7 @@ class Album(object):
     @property
     def Genres(self):
         return self._obj["genres"]
+
+    @property
+    def LinkToAlbum(self):
+        return self._obj["external_urls"]["spotify"]
