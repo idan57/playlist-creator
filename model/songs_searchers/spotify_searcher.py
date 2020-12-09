@@ -77,6 +77,7 @@ class SpotifySearcher(IMusicSearcher):
         return Album(res)
 
     def get_artist_info(self, artist):
+        Logger().info(f"Getting info of artist: {artist}")
         self._lock.acquire()
 
         try:
@@ -104,6 +105,7 @@ class SpotifySearcher(IMusicSearcher):
                     self._lock.release()
                     break
         if res:
+            Logger().info(f"Got info of artist: {artist}")
             return Artist(res)
 
     def get_similar_artists(self, artist, num_of_simillar=20):
@@ -192,6 +194,19 @@ class SpotifySearcher(IMusicSearcher):
             t.join()
         res += self.get_similar_tracks(song, artist, num_of_similar=(num_of_similar - len(res)))
         return res
+
+    def get_songs_by_genres(self, genres):
+        Logger().info(f"Getting songs for the genres: {', '.join(genres)}")
+        recommendations = self.get_recommendations(genres_list=genres)
+        songs = []
+        for track in recommendations["tracks"]:
+            artist_name = track['artists'][0]['name']
+            Logger().info(f"Got Track: {artist_name} - {track['name']}")
+            song = self.get_song_info(track['name'], artist_name)
+            if song:
+                songs += [song]
+
+        return songs
 
     def get_recommendations(self, artists_ids=None, songs_ids=None, genres_list=None):
         recommendations = None

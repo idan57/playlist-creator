@@ -4,6 +4,7 @@ from pathlib import Path
 
 
 from model.playlist_creator.playlist_creator_base import PlaylistCreatorBase
+from model.playlist_creator.playlist_modes import PlaylistModes
 from model.songs_directory.directory_reader import DerictoryReader
 from model.songs_searchers.spotify_searcher import SpotifySearcher
 
@@ -19,12 +20,15 @@ def test_last_fm_searcher():
     searcher = SpotifySearcher(client_id, client_secret)
     res_s, res_a = [], []
     for song in songs:
-        s = searcher.get_song_info(song["name"], song["artist"])
-        s.set_file(song)
+        s = searcher.get_artist_info(song["artist"])
         res_s += [s]
 
-    p = PlaylistCreatorBase(searcher)
-    p.create_playlist(res_s, min_time=300, max_time=1000)
+    gs = []
+    for a in res_s:
+        gs += a.Genres
+
+    p = PlaylistCreatorBase(searcher, mode=PlaylistModes.GENRES)
+    p.create_playlist(list(set(gs)), min_time=300, max_time=1000)
 
     #
     # song_ids = [s.ID for s in res_s]

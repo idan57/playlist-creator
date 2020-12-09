@@ -25,3 +25,7 @@ class Artist(object):
     @property
     def NumOfFollowers(self):
         return self._obj["followers"]["total"]
+
+    @property
+    def ExternalUrl(self):
+        return self._obj["external_urls"]["spotify"]
