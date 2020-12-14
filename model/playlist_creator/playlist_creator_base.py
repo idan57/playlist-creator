@@ -1,5 +1,4 @@
 from threading import Thread, Lock
-from typing import re
 
 from gekko import GEKKO
 
@@ -20,6 +19,8 @@ class PlaylistCreatorBase(IPlaylistCreator):
             return self._artists_creator(music_source, **kwargs)
         elif self._mode == PlaylistModes.GENRES:
             return self._genres_creator(music_source, **kwargs)
+        elif self._mode == PlaylistModes.ALBUMS:
+            return self._albums_creator(music_source, **kwargs)
 
     def _songs_creator(self, songs, genres=None, min_time=0, max_time=2400, append=True):
         if genres:
@@ -162,3 +163,6 @@ class PlaylistCreatorBase(IPlaylistCreator):
                 three += [genres[j]]
             i += 3
             songs += self._music_searcher.get_songs_by_genres(genres=three)
+
+    def _albums_creator(self, music_source, **kwargs):
+        pass

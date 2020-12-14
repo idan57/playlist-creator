@@ -20,7 +20,7 @@ def test_last_fm_searcher():
     searcher = SpotifySearcher(client_id, client_secret)
     res_s, res_a = [], []
     for song in songs:
-        s = searcher.get_artist_info(song["artist"])
+        s = searcher.get_album_info("Metallica", "Metallica")
         res_s += [s]
 
     gs = []
