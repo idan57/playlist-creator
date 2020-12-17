@@ -1,8 +1,0 @@
-Playlist Creator - 2020-12-09_23-03-01: Getting info of artist: Imagine Dragons
-Playlist Creator - 2020-12-09_23-03-06: Got info of artist: Imagine Dragons
-Playlist Creator - 2020-12-09_23-03-06: Getting info of artist: Lil Wayne
-Playlist Creator - 2020-12-09_23-03-12: Got info of artist: Lil Wayne
-Playlist Creator - 2020-12-09_23-03-12: Getting info of artist: Metallica
-Playlist Creator - 2020-12-09_23-03-15: Got info of artist: Metallica
-Playlist Creator - 2020-12-09_23-03-20: Getting songs for the genres: thrash metal pop rap rap modern rock metal rock pop old school thrash trap hard rock hip hop new orleans rap
-Playlist Creator - 2020-12-09_23-03-29: -------- Exception -------- http status: 400 code:-1 - https:apispotifycomv1recommendationslimit20seedgenresthrashmetal2Cpoprap2Crap2Cmodernrock2Cmetal2Crock2Cpop2Coldschoolthrash2Ctrap2Chardrock2Chiphop2Cneworleansrap: invalid request reason: None

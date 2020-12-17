@@ -7,6 +7,7 @@ from model.music_objs.album import Album
 from model.music_objs.artist import Artist
 from model.music_objs.song import Song
 from model.songs_searchers.music_searcher_interface import IMusicSearcher
+import pycountry
 
 
 class SpotifySearcher(IMusicSearcher):
@@ -15,6 +16,14 @@ class SpotifySearcher(IMusicSearcher):
         "songs": {},
         "albums": {}
     }
+    COUNTRY_CODES = ['AD', 'AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO',
+                     'EC',
+                     'SV', 'EE', 'FI', 'FR', 'DE', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'ID', 'IE', 'IT', 'JP', 'LV',
+                     'LI',
+                     'LT', 'LU', 'MY', 'MT', 'MX', 'MC', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT',
+                     'SG',
+                     'ES', 'SK', 'SE', 'CH', 'TW', 'TR', 'GB', 'US', 'UY']
+    CATAGORIES = {}
 
     def __init__(self, client_id, client_secret, disable_exceptions=True):
         client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
@@ -22,6 +31,8 @@ class SpotifySearcher(IMusicSearcher):
         self._sp = Spotify(auth_manager=client_credentials_manager)
         self._lock = Lock()
         self._disable_exceptions = disable_exceptions
+        self.logger = Logger()
+        self.logger.info("Loading categories")
 
     def get_song_info(self, song, artist):
         self._lock.acquire()
@@ -31,7 +42,7 @@ class SpotifySearcher(IMusicSearcher):
         try:
             tracks = self._sp.search(song, limit=50)["tracks"]["items"]
         except Exception as e:
-            Logger().error(str(e))
+            self.logger.error(str(e))
             if not self._disable_exceptions:
                 raise
 
@@ -67,7 +78,7 @@ class SpotifySearcher(IMusicSearcher):
         try:
             tracks = self._sp.search(album, limit=50)["tracks"]["items"]
         except Exception as e:
-            Logger().error(str(e))
+            self.logger.error(str(e))
             if not self._disable_exceptions:
                 raise
 
@@ -89,7 +100,7 @@ class SpotifySearcher(IMusicSearcher):
             try:
                 res = self._sp.album(res["id"])
             except Exception as e:
-                Logger().error(str(e))
+                self.logger.error(str(e))
                 if not self._disable_exceptions:
                     raise
             self._lock.release()
@@ -101,7 +112,7 @@ class SpotifySearcher(IMusicSearcher):
             return album_res
 
     def get_artist_info(self, artist):
-        Logger().info(f"Getting info of artist: {artist}")
+        self.logger.info(f"Getting info of artist: {artist}")
         if artist in self.CACHE["artists"]:
             return self.CACHE["artists"][artist]
 
@@ -110,7 +121,7 @@ class SpotifySearcher(IMusicSearcher):
         try:
             tracks = self._sp.search(artist, limit=50)["tracks"]["items"]
         except Exception as e:
-            Logger().error(str(e))
+            self.logger.error(str(e))
             if not self._disable_exceptions:
                 raise
 
@@ -125,27 +136,27 @@ class SpotifySearcher(IMusicSearcher):
                     try:
                         res = self._sp.artist(a["id"])
                     except Exception as e:
-                        Logger().error(str(e))
+                        self.logger.error(str(e))
                         if not self._disable_exceptions:
                             raise
 
                     self._lock.release()
                     break
         if res:
-            Logger().info(f"Got info of artist: {artist}")
+            self.logger.info(f"Got info of artist: {artist}")
             artist_res = Artist(res)
             self.CACHE["artists"][artist] = artist_res
             return artist_res
 
     def get_similar_artists(self, artist, num_of_simillar=20):
-        Logger().info(f"Getting similar artists for {artist}")
+        self.logger.info(f"Getting similar artists for {artist}")
         artist_obj = self.get_artist_info(artist)
         self._lock.acquire()
 
         try:
             similar_artists = self._sp.artist_related_artists(artist_obj.ID)["artists"]
         except Exception as e:
-            Logger().error(str(e))
+            self.logger.error(str(e))
             if not self._disable_exceptions:
                 raise
 
@@ -156,7 +167,7 @@ class SpotifySearcher(IMusicSearcher):
             if parsed >= num_of_simillar:
                 break
             sim_ar = similar_artists[0]
-            Logger().info(f"Getting similar artist: {sim_ar['name']}")
+            self.logger.info(f"Getting similar artist: {sim_ar['name']}")
             new_sim_ar = Artist(sim_ar)
             self.CACHE["artists"][new_sim_ar.Name] = new_sim_ar
             res += [new_sim_ar]
@@ -165,7 +176,7 @@ class SpotifySearcher(IMusicSearcher):
             try:
                 similar_artists = similar_artists[1:] + self._sp.artist_related_artists(sim_ar["id"])["artists"]
             except Exception as e:
-                Logger().error(str(e))
+                self.logger.error(str(e))
                 if not self._disable_exceptions:
                     raise
 
@@ -181,14 +192,14 @@ class SpotifySearcher(IMusicSearcher):
         try:
             top_tracks = self._sp.artist_top_tracks(artist_obj.ID, country=country)
         except Exception as e:
-            Logger().error(str(e))
+            self.logger.error(str(e))
             if not self._disable_exceptions:
                 raise
 
         self._lock.release()
         res = []
         for song in top_tracks["tracks"]:
-            Logger().info(f"Got top track: {song['name']}")
+            self.logger.info(f"Got top track: {song['name']}")
             song["genres"] = artist_obj.Genres
             sim_song = Song(song)
             self.CACHE["songs"][f"{sim_song.Name}+{artist_obj.Name}"] = sim_song
@@ -203,7 +214,7 @@ class SpotifySearcher(IMusicSearcher):
         try:
             analysis = self._sp.audio_analysis(song_obj.ID)
         except Exception as e:
-            Logger().error(str(e))
+            self.logger.error(str(e))
             if not self._disable_exceptions:
                 raise
 
@@ -211,7 +222,7 @@ class SpotifySearcher(IMusicSearcher):
         return analysis
 
     def get_similar_tracks(self, song, artist, num_of_similar=20):
-        Logger().info(f"Getting similar tracks for {artist} - {song}")
+        self.logger.info(f"Getting similar tracks for {artist} - {song}")
         if not num_of_similar:
             return []
         song_obj = self.get_song_info(song, artist)
@@ -229,17 +240,26 @@ class SpotifySearcher(IMusicSearcher):
         return res
 
     def get_songs_by_genres(self, genres):
-        Logger().info(f"Getting songs for the genres: {', '.join(genres)}")
+        self.logger.info(f"Getting songs for the genres: {', '.join(genres)}")
         recommendations = self.get_recommendations(genres_list=genres)
         songs = []
         for track in recommendations["tracks"]:
             artist_name = track['artists'][0]['name']
-            Logger().info(f"Got Track: {artist_name} - {track['name']}")
+            self.logger.info(f"Got Track: {artist_name} - {track['name']}")
             song = self.get_song_info(track['name'], artist_name)
             if song:
                 songs += [song]
 
         return songs
+
+    def get_playlists_by_country(self, country, limit=20):
+        country = pycountry.countries.get(name=country)
+        if country is None:
+            return
+        country_code = country.alpha_2
+        if country_code in SpotifySearcher.COUNTRY_CODES:
+            featured_playlists = self._sp.featured_playlists(country=country_code, limit=limit)
+            songs = self._get_songs_from_playlists(featured_playlists["playlists"]["items"])
 
     def get_recommendations(self, artists_ids=None, songs_ids=None, genres_list=None):
         recommendations = None
@@ -252,7 +272,7 @@ class SpotifySearcher(IMusicSearcher):
             if genres_list:
                 recommendations = self._sp.recommendations(seed_genres=genres_list)
         except Exception as e:
-            Logger().error(str(e))
+            self.logger.error(str(e))
             if not self._disable_exceptions:
                 raise
         self._lock.release()
@@ -265,7 +285,7 @@ class SpotifySearcher(IMusicSearcher):
         if not artist_info:
             return
         track["genres"] = artist_info.Genres
-        Logger().info(f"Set similar song: {track['artists'][0]['name']} - {track['name']}")
+        self.logger.info(f"Set similar song: {track['artists'][0]['name']} - {track['name']}")
         lock.acquire()
         res += [Song(track)]
         lock.release()
@@ -320,3 +340,7 @@ class SpotifySearcher(IMusicSearcher):
         for t in threads:
             t.join()
         album["tracks"]["items"] = get_song_runner.__getattribute__("tracks")
+
+    def _get_songs_from_playlists(self, playlists):
+        for playlist in playlists:
+            playlist = self._sp.playlist(playlist["id"])
