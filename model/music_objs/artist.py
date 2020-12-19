@@ -1,4 +1,7 @@
 class Artist(object):
+    """
+    A class to represent an artist object
+    """
     def __init__(self, obj):
         self._obj = obj
 

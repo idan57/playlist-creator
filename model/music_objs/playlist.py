@@ -20,7 +20,7 @@ class Playlist(object):
 
     @property
     def Tracks(self):
-        return self._obj["tracks"]["items"]
+        return self._obj["songs"]
 
     @property
     def NumOfTracks(self):
