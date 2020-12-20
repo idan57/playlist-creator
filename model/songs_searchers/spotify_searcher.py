@@ -120,22 +120,16 @@ class SpotifySearcher(IMusicSearcher):
         for tr in tracks:
             al = tr["album"]
             if album.lower() == al["name"].lower() and self._is_artist(al["artists"], artist):
-                res = al
+                res = self._sp.album(al["id"])
                 break
             elif album.lower() == al["name"].lower() and self._in_artists(parsed, al["artists"]):
-                res = al
+                res = self._sp.album(al["id"])
                 break
 
         if res:
-            self._lock.acquire()
-            try:
-                res = self._sp.album(res["id"])
-            except Exception as e:
-                self.logger.error(str(e))
-                if not self._disable_exceptions:
-                    raise
-            self._lock.release()
-            artist_obj = self._get_artist_from_list(al["artists"], artist)
+            artist_obj = self._get_artist_from_list(res["artists"], artist)
+            SpotifySearcher.CACHE_LOCK.acquire()
+            SpotifySearcher.CACHE_LOCK.release()
             SpotifySearcher._set_genre(res, artist_obj)
             self._set_tracks_for_album(res, artist_obj)
             album_res = Album(res)
@@ -165,8 +159,8 @@ class SpotifySearcher(IMusicSearcher):
         :return: Artist object
         """
         self.logger.info(f"Getting info of artist: '{artist}'")
-        if artist in self.CACHE["artists"]:
-            return self.CACHE["artists"][artist]
+        if artist.lower() in self.CACHE["artists"]:
+            return self.CACHE["artists"][artist.lower()]
 
         self._lock.acquire()
         try:
@@ -180,10 +174,11 @@ class SpotifySearcher(IMusicSearcher):
 
         self._lock.release()
         res = None
+        done = False
         for tr in tracks:
             artists = tr["artists"]
             for a in artists:
-                if artist == a["name"]:
+                if artist.lower() == a["name"].lower():
                     self._lock.acquire()
 
                     try:
@@ -194,12 +189,15 @@ class SpotifySearcher(IMusicSearcher):
                             raise
 
                     self._lock.release()
+                    done = True
+                    break
+                if done:
                     break
         if res:
             self.logger.info(f"Got info of artist: '{artist}'")
             artist_res = Artist(res)
             SpotifySearcher.CACHE_LOCK.acquire()
-            self.CACHE["artists"][artist] = artist_res
+            self.CACHE["artists"][artist.lower()] = artist_res
             SpotifySearcher.CACHE_LOCK.release()
             return artist_res
 

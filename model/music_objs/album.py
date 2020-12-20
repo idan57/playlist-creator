@@ -4,6 +4,7 @@ class Album(object):
     """
     def __init__(self, obj):
         self._obj = obj
+        self._num_of_similar = 0
 
     @property
     def Name(self):
@@ -44,3 +45,10 @@ class Album(object):
     @property
     def AvgTracksPopularity(self):
         return sum([track.Popularity for track in self.Tracks]) / self.NumOfTracks
+
+    @property
+    def Similarity(self):
+        return self._num_of_similar
+
+    def set_similarity(self, sim):
+        self._num_of_similar = sim

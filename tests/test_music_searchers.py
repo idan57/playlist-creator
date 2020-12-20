@@ -19,16 +19,11 @@ def test_last_fm_searcher():
     client_secret = '0ae6f5bb823a4ac281dc1b7c07180706'
     searcher = SpotifySearcher(client_id, client_secret)
     res_s, res_a = [], []
-    for song in songs:
-        s = searcher.get_playlists_by_country("united states", limit=1)
-        res_s += [s]
+    s = searcher.get_album_info("evolve", "imagine dragons")
+    res_s += [s]
 
-    gs = []
-    for a in res_s:
-        gs += a.Genres
-
-    p = PlaylistCreatorBase(searcher, mode=PlaylistModes.GENRES)
-    p.create_playlist(list(set(gs)), min_time=300, max_time=1000)
+    p = PlaylistCreatorBase(searcher, mode=PlaylistModes.ALBUMS, num_of_can=0)
+    p.create_playlist(res_s, min_time=300, max_time=1000)
 
     #
     # song_ids = [s.ID for s in res_s]

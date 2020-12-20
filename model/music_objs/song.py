@@ -6,6 +6,7 @@ class Song(object):
         self._obj = obj
         self._file = None
         self._weight = 0
+        self._num_of_similar = 0
 
     @property
     def Name(self):
@@ -50,6 +51,13 @@ class Song(object):
 
     def set_weight(self, w):
         self._weight = w
+
+    @property
+    def Similarity(self):
+        return self._num_of_similar
+
+    def set_similarity(self, sim):
+        self._num_of_similar = sim
 
     def set_file(self, file):
         self._file = file

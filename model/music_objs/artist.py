@@ -4,6 +4,7 @@ class Artist(object):
     """
     def __init__(self, obj):
         self._obj = obj
+        self._num_of_similar = 0
 
     @property
     def Name(self):
@@ -32,3 +33,10 @@ class Artist(object):
     @property
     def ExternalUrl(self):
         return self._obj["external_urls"]["spotify"]
+
+    @property
+    def Similarity(self):
+        return self._num_of_similar
+
+    def set_similarity(self, sim):
+        self._num_of_similar = sim

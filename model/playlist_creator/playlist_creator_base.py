@@ -1,4 +1,8 @@
+from collections import defaultdict
 from threading import Thread, Lock
+import numpy as np
+from dateutil.parser import parse
+import time
 
 from gekko import GEKKO
 
@@ -12,13 +16,15 @@ class PlaylistCreatorBase(IPlaylistCreator):
     A class that gets a music song and creates a playlist from it in various ways.
     """
 
-    def __init__(self, music_searcher, mode=PlaylistModes.SONGS):
+    def __init__(self, music_searcher, mode=PlaylistModes.SONGS, num_of_can=50):
         """
         :param music_searcher: A IMusicSearcher object
         :param mode: mode to create a playlist by
         """
         self._mode = mode
         self._music_searcher = music_searcher
+        self.logger = Logger()
+        self._num_of_can = num_of_can
 
     def create_playlist(self, music_source, **kwargs):
         """
@@ -51,11 +57,12 @@ class PlaylistCreatorBase(IPlaylistCreator):
         if genres:
             genres = []
 
-        Logger().info("Creating playlist by songs...")
+        self.logger.info("Creating playlist by songs...")
         if append:
-            Logger().info("Appending all similar songs")
+            self.logger.info("Appending all similar songs")
             self._append_all_similar_songs(songs)
-            Logger().info("Finished appending all similar songs")
+            self.logger.info("Finished appending all similar songs")
+            songs = self._get_similar(songs)
 
         PlaylistCreatorBase._add_weight_to_songs(songs)
 
@@ -76,7 +83,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
 
         def set_simillar_songs(name, artist, songs_list):
             res = self._music_searcher.get_similar_tracks(name, artist)
-            Logger().info(f"Adding similar for: {artist} - {name}")
+            self.logger.info(f"Adding similar for: {artist} - {name}")
             lock.acquire()
             songs_list += res
             lock.release()
@@ -91,7 +98,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
 
         :param songs: Songs list
         """
-        Logger().info("Calculating weights for songs...")
+        Logger().logger.info("Calculating weights for songs...")
         same_artists = {}
         for song in songs:
             for artist in song.Artists:
@@ -99,9 +106,9 @@ class PlaylistCreatorBase(IPlaylistCreator):
                     same_artists[artist] = []
                 same_artists[artist] += [song]
 
-        Logger().info("Setting weights for songs...")
+        Logger().logger.info("Setting weights for songs...")
         PlaylistCreatorBase._set_weights(same_artists)
-        Logger().info("Setting weights for songs is done.")
+        Logger().logger.info("Setting weights for songs is done.")
 
     @staticmethod
     def _set_weights(same_artists):
@@ -266,7 +273,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
         :param kwargs: arguments
         :return: playlist
         """
-        pass
+        albums = self._get_similar(albums)
 
     @staticmethod
     def _run_in_thread_loop(list_to_run, target, args_method):
@@ -285,4 +292,111 @@ class PlaylistCreatorBase(IPlaylistCreator):
 
         for t in threads:
             t.join(timeout=2400)
-            Logger().info("Still waiting to finish...")
+            Logger().logger.info("Still waiting to finish...")
+
+    def _get_similar(self, music_source):
+        """
+        Get similar music sources as part of the Candidate Generation step.
+
+        :param music_source: music data
+        :return: candidates
+        """
+        self.logger.info("Doing Candidate Generation step")
+        if self._mode == PlaylistModes.GENRES or len(music_source) < self._num_of_can:
+            return music_source
+
+        genres_counts = defaultdict(lambda: [0, None])
+        i = 0
+        for music in music_source:
+            for genre in music.Genres:
+                genres_counts[genre][0] += 1
+                if not genres_counts[genre][1]:
+                    genres_counts[genre][1] = i
+                    i += 1
+
+        num_of_cat = len(genres_counts)
+        if self._mode == PlaylistModes.SONGS:
+            return self._get_candidates_for_songs(music_source, genres_counts, num_of_cat)
+        if self._mode == PlaylistModes.ARTISTS:
+            return self._get_candidates_for_artists(music_source, genres_counts, num_of_cat)
+        if self._mode == PlaylistModes.ALBUMS:
+            return self._get_candidates_for_albums(music_source, genres_counts, num_of_cat)
+
+    def _get_candidates_for_songs(self, songs, genres_counts, num_of_cat):
+        """
+        Get candidates by songs.
+
+        :param songs: songs data
+        :param genres_counts: count of generes
+        :param num_of_cat: number of categoriess
+        :return: candidates
+        """
+        num_of_music = len(songs)
+        vectors = np.zeros((num_of_music, num_of_cat + 1))
+        for music, vec in zip(songs, vectors):
+            vec[0] = music.Popularity
+            for genre in music.Genres:
+                cost, index = genres_counts[genre]
+                vec[index + 1] = cost
+
+        return self._get_similar_from_vecs(vectors, songs, num_of_music, num_of_cat)
+
+    def _get_candidates_for_artists(self, artists, genres_counts, num_of_cat):
+        """
+        Get candidates by artists.
+
+        :param artists: songs data
+        :param genres_counts: count of generes
+        :param num_of_cat: number of categoriess
+        :return: candidates
+        """
+        num_of_music = len(artists)
+        vectors = np.zeros((num_of_music, num_of_cat + 2))
+        for music, vec in zip(artists, vectors):
+            vec[0] = music.Popularity
+            vec[1] = music.NumOfFollowers
+            for genre in music.Genres:
+                cost, index = genres_counts[genre]
+                vec[index + 2] = cost
+
+        return self._get_similar_from_vecs(vectors, artists, num_of_music, num_of_cat)
+
+    def _get_candidates_for_albums(self, albums, genres_counts, num_of_cat):
+        """
+        Get candidates by albums.
+
+        :param albums: songs data
+        :param genres_counts: count of genres
+        :param num_of_cat: number of categories
+        :return: candidates
+        """
+        num_of_music = len(albums)
+        vectors = np.zeros((num_of_music, num_of_cat + 4))
+        for music, vec in zip(albums, vectors):
+            vec[0] = music.Popularity
+            vec[1] = music.NumOfTracks
+            vec[2] = music.AvgTracksPopularity
+            album_time = parse(music.ReleaseDate)
+            vec[3] = time.mktime(album_time.timetuple())
+            for genre in music.Genres:
+                cost, index = genres_counts[genre]
+                vec[index + 4] = cost
+
+        return self._get_similar_from_vecs(vectors, albums, num_of_music, num_of_cat)
+
+    def _get_similar_from_vecs(self, vectors, music_source, num_of_music, num_of_cat):
+        """
+        Get candidates by doing evaluating the dot product for all music sources.
+
+        :param vectors: vectors after weighting
+        :param music_source: the music source
+        :param num_of_music: number of music objects
+        :param num_of_cat: number of categories
+        :return: candidates
+        """
+        for i in range(num_of_music):
+            mat_without_i = np.array(vectors[:i].tolist() + [0 for _ in range(num_of_cat)] + vectors[i + 1:].tolist())
+            music_source[i].set_similarity((mat_without_i @ vectors[i].T).sum())
+
+        music_source.sort(key=lambda m: m.Similarity)
+        return music_source[:self._num_of_can]
