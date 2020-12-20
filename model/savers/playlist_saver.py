@@ -28,6 +28,7 @@ class PlaylistSaver(ISaver):
         if not playlists_path.is_dir():
             playlists_path.mkdir()
         result_dict = {}
+        total_time_in_ms = 0
         for song in songs:
             result_dict[song.ID] = {
                 "artists": song.Artists,
@@ -35,5 +36,7 @@ class PlaylistSaver(ISaver):
                 "link": song.LinkToSong,
                 "popularity": song.Popularity
             }
+            total_time_in_ms += song.Duration
+        result_dict["total_time_in_ms"] = total_time_in_ms
         result_json = json.dumps(result_dict)
         playlist_result_path.write_text(result_json)
