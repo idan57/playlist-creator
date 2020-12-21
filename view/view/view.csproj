@@ -8,10 +8,11 @@
 
   <ItemGroup>
     <None Remove="background.png" />
+    <None Remove="Minimal_Dashboard_Challenge.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="background.png" />
+    <Resource Include="Minimal_Dashboard_Challenge.png" />
   </ItemGroup>
 
 </Project>
