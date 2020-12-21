@@ -72,11 +72,8 @@ class SpotifySearcher(IMusicSearcher):
             artists = tr["artists"]
             if self._in_artists(parsed, artists):
                 res = tr
-                ar_obj = self.get_artist_info(artist)
-                SpotifySearcher._set_genre(res, ar_obj)
-                break
-            if self._in_artists(parsed, artists):
-                res = tr
+                for ar in parsed:
+                    SpotifySearcher._set_genre(res, self.get_artist_info(ar))
                 break
         if res:
             song_res = Song(res)
@@ -467,7 +464,9 @@ class SpotifySearcher(IMusicSearcher):
         :param res: result
         :param artist: Artis object
         """
-        res["genres"] = artist.Genres
+        if "genres" not in res:
+            res["genres"] = []
+        res["genres"] += artist.Genres
 
     @classmethod
     def _parse_artist(cls, artist):
@@ -477,7 +476,7 @@ class SpotifySearcher(IMusicSearcher):
         :return: main artist name
         """
         res = artist.strip().lower()
-        return [f.strip() for r in res.split("&") for t in r.split(",") for f in t.split("x")]
+        return [f.strip() for r in res.split("&") for t in r.split(",") for f in t.split(" x ")]
 
     @classmethod
     def _in_artists(cls, parsed, artists):
@@ -490,7 +489,7 @@ class SpotifySearcher(IMusicSearcher):
         """
         n = 0
         for artist in artists:
-            if artist["name"].lower() in parsed.lower():
+            if artist["name"].lower() in parsed:
                 n += 1
 
         return n == len(parsed)

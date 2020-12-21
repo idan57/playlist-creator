@@ -29,10 +29,11 @@ class DerictoryReader:
         else:
             audio = WAVE(file)
         desc = file.name.rsplit('.', 1)[0]
-        split = desc.split('-')
+        split = desc.rsplit('-',1)
         artist, name = split[0] if len(split) > 1 else '', split[1] if len(split) > 1 else split[0]
         if artist == '':
             artist = str(audio.tags['TPE1'])
         name = name.split("ft")[0].strip()
+        name = name.split("feat")[0].strip()
         song['name'], song['artist'], song['duration'] = name, artist.strip(), audio.info.length
         return song

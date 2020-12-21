@@ -344,7 +344,8 @@ class PlaylistCreatorBase(IPlaylistCreator):
             vec[0] = music.Popularity
             for genre in music.Genres:
                 cost, index = genres_counts[genre]
-                vec[index + 1] = cost
+                if (index+1) < (num_of_cat +1):
+                    vec[index + 1] = cost
 
         return self._get_similar_from_vecs(vectors, songs, num_of_music)
 
