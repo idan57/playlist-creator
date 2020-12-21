@@ -13,6 +13,8 @@ class Logger(object):
     """
     def __init__(self):
         logs_path = Path(__file__).parent.parent.parent / "logs"
+        if not logs_path.is_dir():
+            logs_path.mkdir()
         timed_logs_path = logs_path / datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
         curr_logs_path = logs_path / "current"
         logs = [str(log_dir) for log_dir in logs_path.iterdir()]
@@ -23,6 +25,7 @@ class Logger(object):
             logs_path.mkdir()
         timed_logs_path.mkdir()
         self._save_to = timed_logs_path / "log.txt"
+        self._done_file = timed_logs_path / "done.txt"
         self._valid_chars = [" ", "-", ":"]
         self._save_to.touch()
         self._lock = Lock()
@@ -74,3 +77,6 @@ class Logger(object):
             except Exception:
                 continue
         log_file.write("\n")
+
+    def done(self):
+        self._done_file.touch()

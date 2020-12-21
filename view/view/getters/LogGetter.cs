@@ -13,5 +13,12 @@ namespace view.getters
             sr.Close();
             return log;
         }
+
+        public bool IsDone()
+        {
+            string curr_dir = Directory.GetCurrentDirectory();
+            string done_path = Path.GetFullPath(Path.Combine(curr_dir, "..\\..\\..\\..\\..\\logs\\current\\done.txt"));
+            return File.Exists(done_path);
+        }
     }
 }

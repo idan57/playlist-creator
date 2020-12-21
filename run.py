@@ -1,5 +1,6 @@
 import argparse
 
+from model.logger.spotify_logger import Logger
 from model.runners.playlist_creator_runner import PlaylistCreatorRunner
 
 if __name__ == '__main__':
@@ -34,3 +35,4 @@ if __name__ == '__main__':
                            default=0,
                            help="Minimum songs required from input")
     runner.run(argparser.parse_args())
+    Logger().done()

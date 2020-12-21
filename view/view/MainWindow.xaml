@@ -21,7 +21,7 @@
                     </TransformGroup>
                 </Border.RenderTransform>
             </Border>
-            <TextBox x:Name="logTextBox" Grid.Column="0" Grid.Row="1" Height="223" TextWrapping="Wrap" Width="211" FontFamily="MS Reference Sans Serif" IsReadOnly="True" BorderBrush="{x:Null}" Canvas.Left="55" Canvas.Top="172"/>
+            <TextBox x:Name="logTextBox" Grid.Column="0" Grid.Row="1" Height="223" TextWrapping="Wrap" Width="211" FontFamily="MS Reference Sans Serif" IsReadOnly="True" BorderBrush="{x:Null}" Canvas.Left="55" Canvas.Top="172" Text="{Binding Path=Log, Mode=TwoWay}"/>
             <TextBox x:Name="playlistTextBox" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" FontFamily="MS Reference Sans Serif" IsReadOnly="True" BorderBrush="{x:Null}" Height="223" Width="211" Canvas.Left="347" Canvas.Top="172"/>
             <TextBox x:Name="songsPath" Height="10" Text="" Grid.Column="2" Grid.Row="1" TextWrapping="Wrap" FontSize="6" BorderBrush="{x:Null}" Width="148" Canvas.Left="616" Canvas.Top="300"/>
             <TextBox x:Name="albumsPath" Height="10" Text="" Grid.Column="2" Grid.Row="1" TextWrapping="Wrap" FontSize="6" BorderBrush="{x:Null}" Width="148" Canvas.Left="616" Canvas.Top="251"/>

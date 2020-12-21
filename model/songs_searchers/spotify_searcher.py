@@ -68,17 +68,12 @@ class SpotifySearcher(IMusicSearcher):
 
         parsed = self._parse_artist(artist)
         res = None
-        should_stop = False
         for tr in tracks:
             artists = tr["artists"]
-            for ar in artists:
-                if artist.lower() in ar["name"].lower():
-                    res = tr
-                    ar_obj = self.get_artist_info(ar["name"])
-                    SpotifySearcher._set_genre(res, ar_obj)
-                    should_stop = True
-                    break
-            if should_stop:
+            if self._in_artists(parsed, artists):
+                res = tr
+                ar_obj = self.get_artist_info(artist)
+                SpotifySearcher._set_genre(res, ar_obj)
                 break
             if self._in_artists(parsed, artists):
                 res = tr
