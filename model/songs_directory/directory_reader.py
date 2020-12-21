@@ -1,4 +1,5 @@
 from pathlib import Path
+
 from mutagen.mp3 import MP3
 from mutagen.wave import WAVE
 
@@ -29,7 +30,7 @@ class DerictoryReader:
         else:
             audio = WAVE(file)
         desc = file.name.rsplit('.', 1)[0]
-        split = desc.rsplit('-',1)
+        split = desc.rsplit('-', 1)
         artist, name = split[0] if len(split) > 1 else '', split[1] if len(split) > 1 else split[0]
         if artist == '':
             artist = str(audio.tags['TPE1'])

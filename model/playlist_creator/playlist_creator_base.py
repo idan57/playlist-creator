@@ -1,8 +1,9 @@
+import time
 from collections import defaultdict
 from threading import Thread, Lock
+
 import numpy as np
 from dateutil.parser import parse
-import time
 
 from model.logger.spotify_logger import Logger
 from model.optimizer.avg_rating_optimizer import AvgRatingOptimizer
@@ -344,7 +345,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
             vec[0] = music.Popularity
             for genre in music.Genres:
                 cost, index = genres_counts[genre]
-                if (index+1) < (num_of_cat +1):
+                if (index + 1) < (num_of_cat + 1):
                     vec[index + 1] = cost
 
         return self._get_similar_from_vecs(vectors, songs, num_of_music)

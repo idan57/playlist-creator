@@ -5,6 +5,7 @@ class IPlaylistCreator(ABC):
     """
     Interface for creating playlists
     """
+
     @abstractmethod
     def create_playlist(self, data):
         """

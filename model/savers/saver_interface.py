@@ -5,6 +5,7 @@ class ISaver(ABC):
     """
     Interface for saving data
     """
+
     @abstractmethod
     def save(self, data):
         """

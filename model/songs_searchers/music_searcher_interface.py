@@ -5,6 +5,7 @@ class IMusicSearcher(ABC):
     """
     An interface for searching music
     """
+
     @abstractmethod
     def get_artist_info(self, artist):
         """

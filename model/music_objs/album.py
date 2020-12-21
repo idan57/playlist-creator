@@ -2,6 +2,7 @@ class Album(object):
     """
     A class to represent an album object
     """
+
     def __init__(self, obj):
         self._obj = obj
         self._num_of_similar = 0

@@ -1,5 +1,6 @@
 from threading import Thread, Lock
 
+import pycountry
 from spotipy import SpotifyClientCredentials, Spotify
 
 from model.logger.spotify_logger import Logger
@@ -8,7 +9,6 @@ from model.music_objs.artist import Artist
 from model.music_objs.playlist import Playlist
 from model.music_objs.song import Song
 from model.songs_searchers.music_searcher_interface import IMusicSearcher
-import pycountry
 
 
 class SpotifySearcher(IMusicSearcher):
@@ -407,7 +407,7 @@ class SpotifySearcher(IMusicSearcher):
             new_playlists += [playlist]
             playlist["songs"] = []
             playlist["genres"] = set()
-            t = Thread(target=song_getter, args=(playlist, ))
+            t = Thread(target=song_getter, args=(playlist,))
             t.start()
             threads += [t]
         for t in threads:

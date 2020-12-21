@@ -11,6 +11,7 @@ class Logger(object):
     """
     A logger object to save logs into a file
     """
+
     def __init__(self):
         logs_path = Path(__file__).parent.parent.parent / "logs"
         if not logs_path.is_dir():

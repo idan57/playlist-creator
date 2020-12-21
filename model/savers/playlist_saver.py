@@ -9,6 +9,7 @@ class PlaylistSaver(ISaver):
     A playlist saver for Song objects.
     Saves the playlist as a json file.
     """
+
     def __init__(self, name="playlist.json"):
         """
         :param name: name for the file that the playlist will be save to

@@ -2,6 +2,7 @@ class Song(object):
     """
     A class to represent an song object
     """
+
     def __init__(self, obj):
         self._obj = obj
         self._file = None
