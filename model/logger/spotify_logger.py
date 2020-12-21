@@ -77,6 +77,7 @@ class Logger(object):
             except Exception:
                 continue
         log_file.write("\n")
+        log_file.close()
 
     def done(self):
         self._done_file.touch()

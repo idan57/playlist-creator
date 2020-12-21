@@ -24,11 +24,11 @@ namespace view
     /// </summary>
     public partial class MainWindow : Window
     {
-        private string log;
         private Thread logThread;
         private Thread playlistCreatorThread;
         private LogGetter logGetter = new LogGetter();
-
+        
+        private string log;
         public string Log
         {
             get { return log;  }
@@ -38,6 +38,18 @@ namespace view
                 OnPropertyChanged();
             }
         }
+
+        private string playlist;
+        public string Playlist
+        {
+            get { return playlist; }
+            set
+            {
+                playlist = value;
+                OnPropertyChanged();
+            }
+        }
+
         public MainWindow()
         {
             DataContext = this;
@@ -90,7 +102,8 @@ namespace view
 
         private void CreatePlaylist(object runArgs)
         {
-            throw new NotImplementedException();
+            PlaylistGetter playlistGetter = new PlaylistGetter((string)runArgs);
+            Playlist = playlistGetter.Get();
         }
 
         private string GetRunningCommand()
