@@ -27,10 +27,12 @@ class PlaylistSaver(ISaver):
         playlist_result_path = playlists_path / self._name
         if not playlists_path.is_dir():
             playlists_path.mkdir()
-        result_dict = {}
+        result_dict = {
+            "songs": {}
+        }
         total_time_in_ms = 0
         for song in songs:
-            result_dict[song.ID] = {
+            result_dict["songs"][song.ID] = {
                 "artists": song.Artists,
                 "name": song.Name,
                 "link": song.LinkToSong,
