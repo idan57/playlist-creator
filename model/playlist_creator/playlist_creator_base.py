@@ -4,9 +4,8 @@ import numpy as np
 from dateutil.parser import parse
 import time
 
-from gekko import GEKKO
-
 from model.logger.spotify_logger import Logger
+from model.optimizer.avg_rating_optimizer import AvgRatingOptimizer
 from model.playlist_creator.playlist_creator_interface import IPlaylistCreator
 from model.playlist_creator.playlist_modes import PlaylistModes
 
@@ -43,7 +42,8 @@ class PlaylistCreatorBase(IPlaylistCreator):
         elif self._mode == PlaylistModes.ALBUMS:
             return self._albums_creator(music_source, **kwargs)
 
-    def _songs_creator(self, songs, genres=None, min_time=0, max_time=2400, append=True):
+    def _songs_creator(self, songs, genres=None, min_time=0, max_time=2400,
+                       append=True, artists=None, num_of_songs=0):
         """
         Create a playlist from songs
 
@@ -54,10 +54,8 @@ class PlaylistCreatorBase(IPlaylistCreator):
         :param append:
         :return:
         """
-        if genres:
-            genres = []
-
         self.logger.info("Creating playlist by songs...")
+        prev_song_len = len(songs)
         if append:
             self.logger.info("Appending all similar songs")
             self._append_all_similar_songs(songs)
@@ -68,9 +66,8 @@ class PlaylistCreatorBase(IPlaylistCreator):
 
         songs = PlaylistCreatorBase._optimize_weight(songs)
 
-        songs_vars = PlaylistCreatorBase._optimize_popularity(songs, min_time, max_time)
-        songs = PlaylistCreatorBase._get_songs_after_optimization(songs_vars, songs)
-        return songs
+        return PlaylistCreatorBase._optimize_popularity(songs, min_time, max_time,
+                                                        genres, artists, songs[:prev_song_len], num_of_songs)
 
     def _append_all_similar_songs(self, songs):
         """
@@ -89,7 +86,8 @@ class PlaylistCreatorBase(IPlaylistCreator):
             lock.release()
 
         PlaylistCreatorBase._run_in_thread_loop(songs, target=set_simillar_songs,
-                                                args_method=lambda song, songs: (song.Name, song.Artists[0], songs))
+                                                args_method=lambda song, songs_list: (song.Name, song.Artists[0],
+                                                                                      songs_list))
 
     @staticmethod
     def _add_weight_to_songs(songs):
@@ -137,27 +135,28 @@ class PlaylistCreatorBase(IPlaylistCreator):
         return songs[:30]
 
     @staticmethod
-    def _optimize_popularity(songs, min_time, max_time):
+    def _optimize_popularity(songs, min_time, max_time, genres, artists, initial_songs, num_of_songs):
         """
         Optimize songs by their popularity.
 
         :param songs: songs list
         :param min_time: min time for playlist
         :param max_time: max time for playlist
+        :param genres: required genres
+        :param initial_songs: songs before append
+        :param num_of_songs: at number of songs to take from initial_songs
         :return: indexes of songs to take to playlist
         """
-        m = GEKKO()
-        songs_vars = [m.Var(lb=0, ub=1, integer=True) for i in range(len(songs))]
-        popularity_params = [m.Param(song.Popularity) for song in songs]
-        duration_params = [m.Param(song.Duration) for song in songs]
-        avg_popularity = m.sum([(song_para * s_var) / max(1, sum([song.VALUE.value for song in songs_vars]))
-                                for s_var, song_para in zip(songs_vars, popularity_params)])
-        sum_time = m.sum([song_para * s_var for s_var, song_para in zip(songs_vars, duration_params)])
-        m.Equation([sum_time <= max_time, sum_time >= min_time])
-        m.options.SOLVER = 1
-        m.Maximize(avg_popularity)
-        m.solve()
-        return songs_vars
+        optimizer = AvgRatingOptimizer(songs)
+        optimizer.add_min_time_constraint(min_time)
+        optimizer.add_max_time_constraint(max_time)
+        if genres:
+            for genre, num in genres.items():
+                optimizer.add_genres_constraint(genres, num)
+        if artists:
+            optimizer.add_artists_constraint(artists)
+        optimizer.add_atleast_given_songs(initial_songs, num_of_songs)
+        return optimizer.solve()
 
     @classmethod
     def _get_songs_after_optimization(cls, songs_vars, songs):
@@ -187,7 +186,9 @@ class PlaylistCreatorBase(IPlaylistCreator):
 
         more_artists = self._get_more_artists(top_tracks, artists_names)
 
-        top_tracks += self._get_top_tracks(more_artists)
+        actual_artists = self._get_similar(more_artists)
+
+        top_tracks += self._get_top_tracks(actual_artists)
 
         PlaylistCreatorBase._set_weight_by_artist(top_tracks, artists)
 
@@ -265,6 +266,8 @@ class PlaylistCreatorBase(IPlaylistCreator):
             i += 3
             songs += self._music_searcher.get_songs_by_genres(genres=three)
 
+        return self._songs_creator(songs, append=False, **kwargs)
+
     def _albums_creator(self, albums, **kwargs):
         """
         Create playlist from albums.
@@ -274,6 +277,10 @@ class PlaylistCreatorBase(IPlaylistCreator):
         :return: playlist
         """
         albums = self._get_similar(albums)
+        songs = []
+        for album in albums:
+            songs += album.Tracks
+        return self._songs_creator(songs, append=False, **kwargs)
 
     @staticmethod
     def _run_in_thread_loop(list_to_run, target, args_method):
@@ -397,7 +404,6 @@ class PlaylistCreatorBase(IPlaylistCreator):
         :param vectors: vectors after weighting
         :param music_source: the music source
         :param num_of_music: number of music objects
-        :param num_of_cat: number of categories
         :return: candidates
         """
         for i in range(num_of_music):

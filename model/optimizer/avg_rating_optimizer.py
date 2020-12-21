@@ -33,9 +33,8 @@ class AvgRatingOptimizer(object):
         self.m.Equation(sum_genre >= number)
 
     def add_artists_constraint(self, artists):
-
         for artist in artists:
-            artist_params = [self.m.Param(1) if artist["name"] in song.Artists else self.m.Param(0) for song in
+            artist_params = [self.m.Param(1) if artist in song.Artists else self.m.Param(0) for song in
                              self.songs]
             sum_artist = self.m.sum(
                 [s_var * art for s_var, art in zip(self.songs_vars, artist_params)])

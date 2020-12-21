@@ -23,7 +23,7 @@ def test_last_fm_searcher():
     res_s += [s]
 
     p = PlaylistCreatorBase(searcher, mode=PlaylistModes.SONGS)
-    p.create_playlist(res_s, min_time=1000, max_time=2400)
+    res = p.create_playlist(res_s, min_time=1000, max_time=2400)
     assert True
 
     #
