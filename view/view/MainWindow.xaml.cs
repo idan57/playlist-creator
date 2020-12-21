@@ -147,5 +147,16 @@ namespace view
                 Thread.Sleep(1000);
             }
         }
+
+        private void Border_MouseDown(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            CheckNumOfFilled();
+            RunPlaylistCreator();
+        }
     }
 }
