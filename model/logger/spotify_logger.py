@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 from pathlib import Path
 from threading import Lock
@@ -13,11 +14,16 @@ class Logger(object):
     def __init__(self):
         logs_path = Path(__file__).parent.parent.parent / "logs"
         timed_logs_path = logs_path / datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        curr_logs_path = logs_path / "current"
+        logs = [str(log_dir) for log_dir in logs_path.iterdir()]
+        if str(curr_logs_path) in logs:
+            curr_logs_path.rmdir()
+        os.symlink(str(timed_logs_path), str(curr_logs_path), target_is_directory=True)
         if not logs_path.is_dir():
             logs_path.mkdir()
         timed_logs_path.mkdir()
         self._save_to = timed_logs_path / "log.txt"
-        self._lock_file = timed_logs_path / "lock"
+        self._save_to_temp = timed_logs_path / "temp_log.txt"
         self._valid_chars = [" ", "-", ":"]
         self._save_to.touch()
         self._lock = Lock()
@@ -30,10 +36,7 @@ class Logger(object):
         """
         self._lock.acquire()
 
-        # Create a lock file to let other programs know if the file is available
-        self._lock_file.touch()
         self._write_to_file(msg)
-        self._lock_file.unlink()
 
         self._lock.release()
 
@@ -66,9 +69,12 @@ class Logger(object):
         :param msg: message
         """
         log_file = self._save_to.open("a")
+        tmp_log_file = self._save_to_temp.open("a")
         for c in msg:
             try:
                 log_file.write(c)
+                tmp_log_file.write(c)
             except Exception:
                 continue
         log_file.write("\n")
+        tmp_log_file.write("\n")

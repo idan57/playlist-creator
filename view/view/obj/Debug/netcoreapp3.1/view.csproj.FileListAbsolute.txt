@@ -1,0 +1,17 @@
+C:\Users\Idan Cohen\Desktop\עידן אוניברסיטה\04 - שנה ג\07 - אופטימיזציה\playlist-creator\view\view\obj\Debug\netcoreapp3.1\view.csprojAssemblyReference.cache
+C:\Users\Idan Cohen\Desktop\עידן אוניברסיטה\04 - שנה ג\07 - אופטימיזציה\playlist-creator\view\view\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Idan Cohen\Desktop\עידן אוניברסיטה\04 - שנה ג\07 - אופטימיזציה\playlist-creator\view\view\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Idan Cohen\Desktop\עידן אוניברסיטה\04 - שנה ג\07 - אופטימיזציה\playlist-creator\view\view\obj\Debug\netcoreapp3.1\view_MarkupCompile.cache
+C:\Users\Idan Cohen\Desktop\עידן אוניברסיטה\04 - שנה ג\07 - אופטימיזציה\playlist-creator\view\view\obj\Debug\netcoreapp3.1\view_MarkupCompile.lref
+C:\Users\Idan Cohen\Desktop\עידן אוניברסיטה\04 - שנה ג\07 - אופטימיזציה\playlist-creator\view\view\bin\Debug\netcoreapp3.1\view.exe
+C:\Users\Idan Cohen\Desktop\עידן אוניברסיטה\04 - שנה ג\07 - אופטימיזציה\playlist-creator\view\view\bin\Debug\netcoreapp3.1\view.deps.json
+C:\Users\Idan Cohen\Desktop\עידן אוניברסיטה\04 - שנה ג\07 - אופטימיזציה\playlist-creator\view\view\bin\Debug\netcoreapp3.1\view.runtimeconfig.json
+C:\Users\Idan Cohen\Desktop\עידן אוניברסיטה\04 - שנה ג\07 - אופטימיזציה\playlist-creator\view\view\bin\Debug\netcoreapp3.1\view.runtimeconfig.dev.json
+C:\Users\Idan Cohen\Desktop\עידן אוניברסיטה\04 - שנה ג\07 - אופטימיזציה\playlist-creator\view\view\bin\Debug\netcoreapp3.1\view.dll
+C:\Users\Idan Cohen\Desktop\עידן אוניברסיטה\04 - שנה ג\07 - אופטימיזציה\playlist-creator\view\view\bin\Debug\netcoreapp3.1\view.pdb
+C:\Users\Idan Cohen\Desktop\עידן אוניברסיטה\04 - שנה ג\07 - אופטימיזציה\playlist-creator\view\view\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Idan Cohen\Desktop\עידן אוניברסיטה\04 - שנה ג\07 - אופטימיזציה\playlist-creator\view\view\obj\Debug\netcoreapp3.1\view.g.resources
+C:\Users\Idan Cohen\Desktop\עידן אוניברסיטה\04 - שנה ג\07 - אופטימיזציה\playlist-creator\view\view\obj\Debug\netcoreapp3.1\view.AssemblyInfoInputs.cache
+C:\Users\Idan Cohen\Desktop\עידן אוניברסיטה\04 - שנה ג\07 - אופטימיזציה\playlist-creator\view\view\obj\Debug\netcoreapp3.1\view.AssemblyInfo.cs
+C:\Users\Idan Cohen\Desktop\עידן אוניברסיטה\04 - שנה ג\07 - אופטימיזציה\playlist-creator\view\view\obj\Debug\netcoreapp3.1\view.dll
+C:\Users\Idan Cohen\Desktop\עידן אוניברסיטה\04 - שנה ג\07 - אופטימיזציה\playlist-creator\view\view\obj\Debug\netcoreapp3.1\view.pdb

@@ -98,7 +98,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
 
         :param songs: Songs list
         """
-        Logger().logger.info("Calculating weights for songs...")
+        Logger().info("Calculating weights for songs...")
         same_artists = {}
         for song in songs:
             for artist in song.Artists:
@@ -106,9 +106,9 @@ class PlaylistCreatorBase(IPlaylistCreator):
                     same_artists[artist] = []
                 same_artists[artist] += [song]
 
-        Logger().logger.info("Setting weights for songs...")
+        Logger().info("Setting weights for songs...")
         PlaylistCreatorBase._set_weights(same_artists)
-        Logger().logger.info("Setting weights for songs is done.")
+        Logger().info("Setting weights for songs is done.")
 
     @staticmethod
     def _set_weights(same_artists):
@@ -292,7 +292,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
 
         for t in threads:
             t.join(timeout=2400)
-            Logger().logger.info("Still waiting to finish...")
+            Logger().info("Still waiting to finish...")
 
     def _get_similar(self, music_source):
         """
@@ -395,7 +395,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
         :return: candidates
         """
         for i in range(num_of_music):
-            mat_without_i = np.array(vectors[:i].tolist() + [0 for _ in range(num_of_cat)] + vectors[i + 1:].tolist())
+            mat_without_i = np.array(vectors[:i].tolist() + vectors[i + 1:].tolist())
             music_source[i].set_similarity((mat_without_i @ vectors[i].T).sum())
 
         music_source.sort(key=lambda m: m.Similarity)
