@@ -51,7 +51,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
         :param genres: genres wanted for the songs
         :param min_time: minimum time required for a playlist
         :param max_time: maximum time required for the playlist
-        :param append:
+        :param append: append similar songs
         :return:
         """
         self.logger.info("Creating playlist by songs...")
@@ -258,15 +258,16 @@ class PlaylistCreatorBase(IPlaylistCreator):
         :return: playlist
         """
         i, n = 0, len(genres)
+        genres_keys = [gen for gen in genres.keys()]
         songs = []
         while i < n:
             three = []
             for j in range(i, min(i + 3, n)):
-                three += [genres[j]]
+                three += [genres_keys[j]]
             i += 3
             songs += self._music_searcher.get_songs_by_genres(genres=three)
 
-        return self._songs_creator(songs, append=False, **kwargs)
+        return self._songs_creator(songs, append=False, genres=genres, **kwargs)
 
     def _albums_creator(self, albums, **kwargs):
         """
