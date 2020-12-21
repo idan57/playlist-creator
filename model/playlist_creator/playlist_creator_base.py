@@ -372,15 +372,22 @@ class PlaylistCreatorBase(IPlaylistCreator):
         """
         num_of_music = len(albums)
         vectors = np.zeros((num_of_music, num_of_cat + 4))
+        times = []
         for music, vec in zip(albums, vectors):
             vec[0] = music.Popularity
             vec[1] = music.NumOfTracks
             vec[2] = music.AvgTracksPopularity
             album_time = parse(music.ReleaseDate)
-            vec[3] = time.mktime(album_time.timetuple())
+            actual_time = time.mktime(album_time.timetuple())
+            times += [actual_time]
+            vec[3] = actual_time
             for genre in music.Genres:
                 cost, index = genres_counts[genre]
                 vec[index + 4] = cost
+        times = np.array(times)
+        mean, std = times.mean(), times.std()
+        for vec in vectors:
+            vec[3] = (vec[3] - mean) / std
 
         return self._get_similar_from_vecs(vectors, albums, num_of_music, num_of_cat)
 
