@@ -314,23 +314,22 @@ class PlaylistCreatorBase(IPlaylistCreator):
                     genres_counts[genre][1] = i
                     i += 1
 
-        num_of_cat = len(genres_counts)
         if self._mode == PlaylistModes.SONGS:
-            return self._get_candidates_for_songs(music_source, genres_counts, num_of_cat)
+            return self._get_candidates_for_songs(music_source, genres_counts)
         if self._mode == PlaylistModes.ARTISTS:
-            return self._get_candidates_for_artists(music_source, genres_counts, num_of_cat)
+            return self._get_candidates_for_artists(music_source, genres_counts)
         if self._mode == PlaylistModes.ALBUMS:
-            return self._get_candidates_for_albums(music_source, genres_counts, num_of_cat)
+            return self._get_candidates_for_albums(music_source, genres_counts)
 
-    def _get_candidates_for_songs(self, songs, genres_counts, num_of_cat):
+    def _get_candidates_for_songs(self, songs, genres_counts):
         """
         Get candidates by songs.
 
         :param songs: songs data
         :param genres_counts: count of generes
-        :param num_of_cat: number of categoriess
         :return: candidates
         """
+        num_of_cat = len(genres_counts)
         num_of_music = len(songs)
         vectors = np.zeros((num_of_music, num_of_cat + 1))
         for music, vec in zip(songs, vectors):
@@ -339,17 +338,17 @@ class PlaylistCreatorBase(IPlaylistCreator):
                 cost, index = genres_counts[genre]
                 vec[index + 1] = cost
 
-        return self._get_similar_from_vecs(vectors, songs, num_of_music, num_of_cat)
+        return self._get_similar_from_vecs(vectors, songs, num_of_music)
 
-    def _get_candidates_for_artists(self, artists, genres_counts, num_of_cat):
+    def _get_candidates_for_artists(self, artists, genres_counts):
         """
         Get candidates by artists.
 
         :param artists: songs data
         :param genres_counts: count of generes
-        :param num_of_cat: number of categoriess
         :return: candidates
         """
+        num_of_cat = len(genres_counts)
         num_of_music = len(artists)
         vectors = np.zeros((num_of_music, num_of_cat + 2))
         for music, vec in zip(artists, vectors):
@@ -359,17 +358,17 @@ class PlaylistCreatorBase(IPlaylistCreator):
                 cost, index = genres_counts[genre]
                 vec[index + 2] = cost
 
-        return self._get_similar_from_vecs(vectors, artists, num_of_music, num_of_cat)
+        return self._get_similar_from_vecs(vectors, artists, num_of_music)
 
-    def _get_candidates_for_albums(self, albums, genres_counts, num_of_cat):
+    def _get_candidates_for_albums(self, albums, genres_counts):
         """
         Get candidates by albums.
 
         :param albums: songs data
         :param genres_counts: count of genres
-        :param num_of_cat: number of categories
         :return: candidates
         """
+        num_of_cat = len(genres_counts)
         num_of_music = len(albums)
         vectors = np.zeros((num_of_music, num_of_cat + 4))
         times = []
@@ -389,9 +388,9 @@ class PlaylistCreatorBase(IPlaylistCreator):
         for vec in vectors:
             vec[3] = (vec[3] - mean) / std
 
-        return self._get_similar_from_vecs(vectors, albums, num_of_music, num_of_cat)
+        return self._get_similar_from_vecs(vectors, albums, num_of_music)
 
-    def _get_similar_from_vecs(self, vectors, music_source, num_of_music, num_of_cat):
+    def _get_similar_from_vecs(self, vectors, music_source, num_of_music):
         """
         Get candidates by doing evaluating the dot product for all music sources.
 
