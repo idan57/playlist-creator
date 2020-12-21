@@ -490,7 +490,7 @@ class SpotifySearcher(IMusicSearcher):
         """
         n = 0
         for artist in artists:
-            if artist["name"] in parsed:
+            if artist["name"].lower() in parsed.lower():
                 n += 1
 
         return n == len(parsed)

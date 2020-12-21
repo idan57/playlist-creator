@@ -84,7 +84,13 @@ namespace view
         {
             int countFilled = 0;
             string runArgs = GetRunningCommand();
-            
+            logThread = new Thread(SetLogData);
+            playlistCreatorThread = new Thread(CreatePlaylist);
+        }
+
+        private void CreatePlaylist(object runArgs)
+        {
+            throw new NotImplementedException();
         }
 
         private string GetRunningCommand()
@@ -124,7 +130,8 @@ namespace view
         {
             while(!logGetter.IsDone())
             {
-
+                Log = logGetter.Get();
+                Thread.Sleep(1000);
             }
         }
     }
