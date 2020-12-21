@@ -23,7 +23,6 @@ class Logger(object):
             logs_path.mkdir()
         timed_logs_path.mkdir()
         self._save_to = timed_logs_path / "log.txt"
-        self._save_to_temp = timed_logs_path / "temp_log.txt"
         self._valid_chars = [" ", "-", ":"]
         self._save_to.touch()
         self._lock = Lock()
@@ -69,12 +68,9 @@ class Logger(object):
         :param msg: message
         """
         log_file = self._save_to.open("a")
-        tmp_log_file = self._save_to_temp.open("a")
         for c in msg:
             try:
                 log_file.write(c)
-                tmp_log_file.write(c)
             except Exception:
                 continue
         log_file.write("\n")
-        tmp_log_file.write("\n")
