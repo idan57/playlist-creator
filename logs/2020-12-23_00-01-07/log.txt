@@ -1,0 +1,73 @@
+Playlist Creator - 2020-12-23_00-01-07: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-01-08: Getting info of artist: imagine dragons
+Playlist Creator - 2020-12-23_00-01-12: Got info of artist: imagine dragons
+Playlist Creator - 2020-12-23_00-01-12: Got song info for Imagine Dragons - Thunder successfully
+Playlist Creator - 2020-12-23_00-01-12: Creating playlist by songs
+Playlist Creator - 2020-12-23_00-01-12: Appending all similar songs
+Playlist Creator - 2020-12-23_00-01-12: Getting similar tracks for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-01-12: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: Flo Rida
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: Maroon 5
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: Marshmello
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: Alan Walker
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: Camila Cabello
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: AJR
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: Imagine Dragons
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: Maroon 5
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: DJ Snake
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: X Ambassadors
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: Jonas Blue
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: Imagine Dragons
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: American Authors
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: Nickelback
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: Zedd
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: Lukas Graham
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: Meghan Trainor
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: Alan Walker
+Playlist Creator - 2020-12-23_00-01-12: Set similar song: Imagine Dragons - Gold
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: The Chainsmokers
+Playlist Creator - 2020-12-23_00-01-12: Getting info of artist: Linkin Park
+Playlist Creator - 2020-12-23_00-01-12: Set similar song: Imagine Dragons - Zero - From the Original Motion Picture Ralph Breaks The Internet
+Playlist Creator - 2020-12-23_00-01-16: Got info of artist: Flo Rida
+Playlist Creator - 2020-12-23_00-01-16: Set similar song: Flo Rida - Cake - Challenge Version
+Playlist Creator - 2020-12-23_00-01-20: Got info of artist: Linkin Park
+Playlist Creator - 2020-12-23_00-01-20: Set similar song: Linkin Park - Heavy feat Kiiara
+Playlist Creator - 2020-12-23_00-01-24: Got info of artist: Zedd
+Playlist Creator - 2020-12-23_00-01-24: Set similar song: Zedd - The Middle
+Playlist Creator - 2020-12-23_00-01-29: Got info of artist: The Chainsmokers
+Playlist Creator - 2020-12-23_00-01-29: Set similar song: The Chainsmokers - Paris
+Playlist Creator - 2020-12-23_00-01-32: Got info of artist: DJ Snake
+Playlist Creator - 2020-12-23_00-01-32: Set similar song: DJ Snake - Let Me Love You - R3hab Remix
+Playlist Creator - 2020-12-23_00-01-36: Got info of artist: Alan Walker
+Playlist Creator - 2020-12-23_00-01-36: Set similar song: Alan Walker - Tired
+Playlist Creator - 2020-12-23_00-01-39: Got info of artist: Jonas Blue
+Playlist Creator - 2020-12-23_00-01-39: Set similar song: Jonas Blue - Rise
+Playlist Creator - 2020-12-23_00-01-45: Got info of artist: Lukas Graham
+Playlist Creator - 2020-12-23_00-01-45: Set similar song: Lukas Graham - 7 Years
+Playlist Creator - 2020-12-23_00-01-50: Got info of artist: American Authors
+Playlist Creator - 2020-12-23_00-01-50: Set similar song: American Authors - Best Day Of My Life
+Playlist Creator - 2020-12-23_00-01-55: Got info of artist: X Ambassadors
+Playlist Creator - 2020-12-23_00-01-55: Set similar song: X Ambassadors - Renegades
+Playlist Creator - 2020-12-23_00-01-58: Got info of artist: Alan Walker
+Playlist Creator - 2020-12-23_00-01-58: Set similar song: Alan Walker - Spectre
+Playlist Creator - 2020-12-23_00-02-03: Got info of artist: Nickelback
+Playlist Creator - 2020-12-23_00-02-03: Set similar song: Nickelback - We Will Rock You - 2020 Remaster
+Playlist Creator - 2020-12-23_00-02-12: Got info of artist: Maroon 5
+Playlist Creator - 2020-12-23_00-02-12: Set similar song: Maroon 5 - Animals
+Playlist Creator - 2020-12-23_00-02-14: Got info of artist: AJR
+Playlist Creator - 2020-12-23_00-02-14: Set similar song: AJR - Let the Games Begin
+Playlist Creator - 2020-12-23_00-02-16: Got info of artist: Camila Cabello
+Playlist Creator - 2020-12-23_00-02-16: Set similar song: Camila Cabello - Never Be the Same
+Playlist Creator - 2020-12-23_00-02-16: Got info of artist: Marshmello
+Playlist Creator - 2020-12-23_00-02-16: Set similar song: Marshmello - Stars
+Playlist Creator - 2020-12-23_00-02-20: Got info of artist: Meghan Trainor
+Playlist Creator - 2020-12-23_00-02-20: Set similar song: Meghan Trainor - No Excuses
+Playlist Creator - 2020-12-23_00-02-25: Got info of artist: Maroon 5
+Playlist Creator - 2020-12-23_00-02-25: Set similar song: Maroon 5 - Girls Like You feat Cardi B
+Playlist Creator - 2020-12-23_00-02-25: Adding similar for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-02-25: Still waiting to finish
+Playlist Creator - 2020-12-23_00-02-25: Finished appending all similar songs
+Playlist Creator - 2020-12-23_00-02-25: Doing Candidate Generation step
+Playlist Creator - 2020-12-23_00-02-25: Calculating weights for songs
+Playlist Creator - 2020-12-23_00-02-25: Setting weights for songs
+Playlist Creator - 2020-12-23_00-02-25: Setting weights for songs is done

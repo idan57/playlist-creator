@@ -1,0 +1,74 @@
+Playlist Creator - 2020-12-23_00-37-27: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-37-27: Getting info of artist: imagine dragons
+Playlist Creator - 2020-12-23_00-37-32: Got info of artist: imagine dragons
+Playlist Creator - 2020-12-23_00-37-32: Got song info for Imagine Dragons - Thunder successfully
+Playlist Creator - 2020-12-23_00-37-32: Creating playlist by songs
+Playlist Creator - 2020-12-23_00-37-32: Appending all similar songs
+Playlist Creator - 2020-12-23_00-37-32: Getting similar tracks for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-37-32: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: RagnBone Man
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: Fitz and The Tantrums
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: Ed Sheeran
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: Niall Horan
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: American Authors
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: Imagine Dragons
+Playlist Creator - 2020-12-23_00-37-32: Set similar song: Imagine Dragons - Monster
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: Fitz and The Tantrums
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: Rita Ora
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: Maroon 5
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: Hailee Steinfeld
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: DJ Snake
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: The Chainsmokers
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: Ed Sheeran
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: Macklemore
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: Fall Out Boy
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: MAGIC
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: WALK THE MOON
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: The Script
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: Halsey
+Playlist Creator - 2020-12-23_00-37-32: Getting info of artist: ZAYN
+Playlist Creator - 2020-12-23_00-37-36: Got info of artist: RagnBone Man
+Playlist Creator - 2020-12-23_00-37-36: Set similar song: RagnBone Man - Skin
+Playlist Creator - 2020-12-23_00-37-41: Got info of artist: Halsey
+Playlist Creator - 2020-12-23_00-37-41: Set similar song: Halsey - Bad At Love
+Playlist Creator - 2020-12-23_00-37-45: Got info of artist: The Script
+Playlist Creator - 2020-12-23_00-37-45: Set similar song: The Script - Rain
+Playlist Creator - 2020-12-23_00-37-48: Got info of artist: WALK THE MOON
+Playlist Creator - 2020-12-23_00-37-48: Set similar song: WALK THE MOON - Ghostbusters
+Playlist Creator - 2020-12-23_00-37-51: Got info of artist: Fall Out Boy
+Playlist Creator - 2020-12-23_00-37-51: Set similar song: Fall Out Boy - My Songs Know What You Did In The Dark Light Em Up
+Playlist Creator - 2020-12-23_00-37-57: Got info of artist: Maroon 5
+Playlist Creator - 2020-12-23_00-37-57: Set similar song: Maroon 5 - Dont Wanna Know
+Playlist Creator - 2020-12-23_00-38-02: Got info of artist: American Authors
+Playlist Creator - 2020-12-23_00-38-02: Set similar song: American Authors - Pocket Full Of Gold
+Playlist Creator - 2020-12-23_00-38-05: Got info of artist: Rita Ora
+Playlist Creator - 2020-12-23_00-38-05: Set similar song: Rita Ora - Your Song
+Playlist Creator - 2020-12-23_00-38-08: Got info of artist: Ed Sheeran
+Playlist Creator - 2020-12-23_00-38-08: Set similar song: Ed Sheeran - Perfect
+Playlist Creator - 2020-12-23_00-38-12: Got info of artist: DJ Snake
+Playlist Creator - 2020-12-23_00-38-12: Set similar song: DJ Snake - Taki Taki feat Selena Gomez Ozuna  Cardi B
+Playlist Creator - 2020-12-23_00-38-19: Got info of artist: ZAYN
+Playlist Creator - 2020-12-23_00-38-19: Set similar song: ZAYN - I Dont Wanna Live Forever Fifty Shades Darker
+Playlist Creator - 2020-12-23_00-38-24: Got info of artist: Niall Horan
+Playlist Creator - 2020-12-23_00-38-24: Set similar song: Niall Horan - Slow Hands
+Playlist Creator - 2020-12-23_00-38-26: Got info of artist: Fitz and The Tantrums
+Playlist Creator - 2020-12-23_00-38-26: Set similar song: Fitz and The Tantrums - HandClap
+Playlist Creator - 2020-12-23_00-38-31: Got info of artist: The Chainsmokers
+Playlist Creator - 2020-12-23_00-38-31: Set similar song: The Chainsmokers - Sick Boy
+Playlist Creator - 2020-12-23_00-38-36: Got info of artist: Ed Sheeran
+Playlist Creator - 2020-12-23_00-38-36: Set similar song: Ed Sheeran - Castle on the Hill
+Playlist Creator - 2020-12-23_00-38-39: Got info of artist: Macklemore
+Playlist Creator - 2020-12-23_00-38-39: Set similar song: Macklemore - Glorious feat Skylar Grey
+Playlist Creator - 2020-12-23_00-38-44: Got info of artist: Fitz and The Tantrums
+Playlist Creator - 2020-12-23_00-38-44: Set similar song: Fitz and The Tantrums - Fool
+Playlist Creator - 2020-12-23_00-38-48: Got info of artist: Hailee Steinfeld
+Playlist Creator - 2020-12-23_00-38-48: Set similar song: Hailee Steinfeld - Let Me Go with Alesso Florida Georgia Line  watt
+Playlist Creator - 2020-12-23_00-38-48: Got info of artist: MAGIC
+Playlist Creator - 2020-12-23_00-38-48: Set similar song: MAGIC - Rude Acoustic
+Playlist Creator - 2020-12-23_00-38-48: Adding similar for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-38-48: Still waiting to finish
+Playlist Creator - 2020-12-23_00-38-48: Finished appending all similar songs
+Playlist Creator - 2020-12-23_00-38-48: Doing Candidate Generation step
+Playlist Creator - 2020-12-23_00-38-48: Calculating weights for songs
+Playlist Creator - 2020-12-23_00-38-48: Setting weights for songs
+Playlist Creator - 2020-12-23_00-38-48: Setting weights for songs is done

@@ -1,0 +1,73 @@
+Playlist Creator - 2020-12-22_22-53-36: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_22-53-37: Getting info of artist: imagine dragons
+Playlist Creator - 2020-12-22_22-53-42: Got info of artist: imagine dragons
+Playlist Creator - 2020-12-22_22-53-42: Got song info for Imagine Dragons - Thunder successfully
+Playlist Creator - 2020-12-22_22-53-42: Creating playlist by songs
+Playlist Creator - 2020-12-22_22-53-42: Appending all similar songs
+Playlist Creator - 2020-12-22_22-53-42: Getting similar tracks for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_22-53-42: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: The Script
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: Cheat Codes
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: Charlie Puth
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: Kygo
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: Selena Gomez
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: The Chainsmokers
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: Steve Aoki
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: Twenty One Pilots
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: WALK THE MOON
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: DJ Snake
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: NF
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: Zayde Wlf
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: Imagine Dragons
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: Charlie Puth
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: Jason Derulo
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: Kelly Clarkson
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: Kygo
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: Imagine Dragons
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: Calvin Harris
+Playlist Creator - 2020-12-22_22-53-42: Getting info of artist: Marshmello
+Playlist Creator - 2020-12-22_22-53-42: Set similar song: Imagine Dragons - Natural
+Playlist Creator - 2020-12-22_22-53-42: Set similar song: Imagine Dragons - Roots
+Playlist Creator - 2020-12-22_22-53-50: Got info of artist: The Chainsmokers
+Playlist Creator - 2020-12-22_22-53-50: Set similar song: The Chainsmokers - Paris
+Playlist Creator - 2020-12-22_22-53-53: Got info of artist: Marshmello
+Playlist Creator - 2020-12-22_22-53-53: Set similar song: Marshmello - Happier
+Playlist Creator - 2020-12-22_22-53-57: Got info of artist: Charlie Puth
+Playlist Creator - 2020-12-22_22-53-57: Set similar song: Charlie Puth - Attention
+Playlist Creator - 2020-12-22_22-54-04: Got info of artist: Twenty One Pilots
+Playlist Creator - 2020-12-22_22-54-04: Set similar song: Twenty One Pilots - Stressed Out
+Playlist Creator - 2020-12-22_22-54-09: Got info of artist: Calvin Harris
+Playlist Creator - 2020-12-22_22-54-09: Set similar song: Calvin Harris - My Way
+Playlist Creator - 2020-12-22_22-54-17: Got info of artist: Charlie Puth
+Playlist Creator - 2020-12-22_22-54-17: Set similar song: Charlie Puth - One Call Away
+Playlist Creator - 2020-12-22_22-54-24: Got info of artist: Zayde Wlf
+Playlist Creator - 2020-12-22_22-54-24: Set similar song: Zayde Wlf - Gladiator
+Playlist Creator - 2020-12-22_22-54-28: Got info of artist: Kygo
+Playlist Creator - 2020-12-22_22-54-28: Set similar song: Kygo - Stargazing
+Playlist Creator - 2020-12-22_22-54-31: Got info of artist: Selena Gomez
+Playlist Creator - 2020-12-22_22-54-31: Set similar song: Selena Gomez - Wolves
+Playlist Creator - 2020-12-22_22-54-35: Got info of artist: Jason Derulo
+Playlist Creator - 2020-12-22_22-54-35: Set similar song: Jason Derulo - Tip Toe feat French Montana
+Playlist Creator - 2020-12-22_22-54-38: Got info of artist: WALK THE MOON
+Playlist Creator - 2020-12-22_22-54-38: Set similar song: WALK THE MOON - Ghostbusters
+Playlist Creator - 2020-12-22_22-54-41: Got info of artist: DJ Snake
+Playlist Creator - 2020-12-22_22-54-41: Set similar song: DJ Snake - Taki Taki feat Selena Gomez Ozuna  Cardi B
+Playlist Creator - 2020-12-22_22-54-42: Got info of artist: Kygo
+Playlist Creator - 2020-12-22_22-54-42: Set similar song: Kygo - First Time
+Playlist Creator - 2020-12-22_22-54-47: Got info of artist: NF
+Playlist Creator - 2020-12-22_22-54-47: Set similar song: NF - Let You Down
+Playlist Creator - 2020-12-22_22-54-51: Got info of artist: Cheat Codes
+Playlist Creator - 2020-12-22_22-54-51: Set similar song: Cheat Codes - No Promises feat Demi Lovato
+Playlist Creator - 2020-12-22_22-54-51: Got info of artist: Steve Aoki
+Playlist Creator - 2020-12-22_22-54-51: Set similar song: Steve Aoki - Just Hold On
+Playlist Creator - 2020-12-22_22-54-52: Got info of artist: The Script
+Playlist Creator - 2020-12-22_22-54-52: Set similar song: The Script - Hall of Fame feat william
+Playlist Creator - 2020-12-22_22-54-54: Got info of artist: Kelly Clarkson
+Playlist Creator - 2020-12-22_22-54-54: Set similar song: Kelly Clarkson - Love So Soft
+Playlist Creator - 2020-12-22_22-54-54: Adding similar for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_22-54-54: Still waiting to finish
+Playlist Creator - 2020-12-22_22-54-54: Finished appending all similar songs
+Playlist Creator - 2020-12-22_22-54-54: Doing Candidate Generation step
+Playlist Creator - 2020-12-22_22-54-54: Calculating weights for songs
+Playlist Creator - 2020-12-22_22-54-54: Setting weights for songs
+Playlist Creator - 2020-12-22_22-54-54: Setting weights for songs is done

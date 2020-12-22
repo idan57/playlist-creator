@@ -46,8 +46,7 @@ class PlaylistCreatorRunner(IRunner):
 
             if mode == -1:
                 mode = PlaylistModes.GENRES
-        if args.minimum_songs:
-            min_songs = args.minimum_songs
+        min_songs = args.minimum_songs
         min_time = args.down * 60
         max_time = args.up * 60
         p = PlaylistCreatorBase(searcher, mode=mode)

@@ -1,0 +1,74 @@
+Playlist Creator - 2020-12-22_23-40-52: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_23-40-53: Getting info of artist: imagine dragons
+Playlist Creator - 2020-12-22_23-40-58: Got info of artist: imagine dragons
+Playlist Creator - 2020-12-22_23-40-58: Got song info for Imagine Dragons - Thunder successfully
+Playlist Creator - 2020-12-22_23-40-58: Creating playlist by songs
+Playlist Creator - 2020-12-22_23-40-58: Appending all similar songs
+Playlist Creator - 2020-12-22_23-40-58: Getting similar tracks for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_23-40-58: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: Imagine Dragons
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: Vigiland
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: Marshmello
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: Shawn Mendes
+Playlist Creator - 2020-12-22_23-40-58: Set similar song: Imagine Dragons - Believer
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: NF
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: Zedd
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: League of Legends
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: Bruno Mars
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: Anne-Marie
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: Kodaline
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: The Cab
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: Demi Lovato
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: Andy Grammer
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: 5 Seconds of Summer
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: Charlie Puth
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: OneRepublic
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: Bruno Mars
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: Sheppard
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: Maroon 5
+Playlist Creator - 2020-12-22_23-40-58: Getting info of artist: American Authors
+Playlist Creator - 2020-12-22_23-41-02: Got info of artist: Vigiland
+Playlist Creator - 2020-12-22_23-41-02: Set similar song: Vigiland - Friday Night
+Playlist Creator - 2020-12-22_23-41-14: Got info of artist: OneRepublic
+Playlist Creator - 2020-12-22_23-41-14: Set similar song: OneRepublic - Connection
+Playlist Creator - 2020-12-22_23-41-18: Got info of artist: Marshmello
+Playlist Creator - 2020-12-22_23-41-18: Set similar song: Marshmello - Stars
+Playlist Creator - 2020-12-22_23-41-20: Got info of artist: Charlie Puth
+Playlist Creator - 2020-12-22_23-41-20: Set similar song: Charlie Puth - How Long
+Playlist Creator - 2020-12-22_23-41-25: Got info of artist: Maroon 5
+Playlist Creator - 2020-12-22_23-41-25: Set similar song: Maroon 5 - Moves Like Jagger - Studio Recording From The Voice Performance
+Playlist Creator - 2020-12-22_23-41-30: Got info of artist: Kodaline
+Playlist Creator - 2020-12-22_23-41-30: Set similar song: Kodaline - Brother
+Playlist Creator - 2020-12-22_23-41-35: Got info of artist: Shawn Mendes
+Playlist Creator - 2020-12-22_23-41-35: Set similar song: Shawn Mendes - Treat You Better
+Playlist Creator - 2020-12-22_23-41-38: Got info of artist: 5 Seconds of Summer
+Playlist Creator - 2020-12-22_23-41-38: Set similar song: 5 Seconds of Summer - Youngblood
+Playlist Creator - 2020-12-22_23-41-40: Got info of artist: Bruno Mars
+Playlist Creator - 2020-12-22_23-41-40: Set similar song: Bruno Mars - Finesse - Remix feat Cardi B
+Playlist Creator - 2020-12-22_23-41-47: Got info of artist: Demi Lovato
+Playlist Creator - 2020-12-22_23-41-47: Set similar song: Demi Lovato - Sorry Not Sorry
+Playlist Creator - 2020-12-22_23-41-48: Got info of artist: Zedd
+Playlist Creator - 2020-12-22_23-41-48: Set similar song: Zedd - Stay
+Playlist Creator - 2020-12-22_23-41-51: Got info of artist: Anne-Marie
+Playlist Creator - 2020-12-22_23-41-51: Set similar song: Anne-Marie - 2002
+Playlist Creator - 2020-12-22_23-41-53: Got info of artist: The Cab
+Playlist Creator - 2020-12-22_23-41-53: Set similar song: The Cab - Angel With A Shotgun
+Playlist Creator - 2020-12-22_23-41-58: Got info of artist: American Authors
+Playlist Creator - 2020-12-22_23-41-58: Set similar song: American Authors - Best Day Of My Life
+Playlist Creator - 2020-12-22_23-41-59: Got info of artist: Sheppard
+Playlist Creator - 2020-12-22_23-41-59: Set similar song: Sheppard - Edge Of The Night
+Playlist Creator - 2020-12-22_23-42-03: Got info of artist: NF
+Playlist Creator - 2020-12-22_23-42-03: Set similar song: NF - Let You Down
+Playlist Creator - 2020-12-22_23-42-06: Got info of artist: Bruno Mars
+Playlist Creator - 2020-12-22_23-42-06: Set similar song: Bruno Mars - 24K Magic
+Playlist Creator - 2020-12-22_23-42-10: Got info of artist: Andy Grammer
+Playlist Creator - 2020-12-22_23-42-10: Set similar song: Andy Grammer - Good To Be Alive Hallelujah
+Playlist Creator - 2020-12-22_23-42-10: Got info of artist: League of Legends
+Playlist Creator - 2020-12-22_23-42-10: Set similar song: League of Legends - Legends Never Die
+Playlist Creator - 2020-12-22_23-42-10: Adding similar for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_23-42-10: Still waiting to finish
+Playlist Creator - 2020-12-22_23-42-10: Finished appending all similar songs
+Playlist Creator - 2020-12-22_23-42-10: Doing Candidate Generation step
+Playlist Creator - 2020-12-22_23-42-10: Calculating weights for songs
+Playlist Creator - 2020-12-22_23-42-10: Setting weights for songs
+Playlist Creator - 2020-12-22_23-42-10: Setting weights for songs is done

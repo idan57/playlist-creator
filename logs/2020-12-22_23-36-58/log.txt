@@ -1,0 +1,74 @@
+Playlist Creator - 2020-12-22_23-36-58: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_23-36-59: Getting info of artist: imagine dragons
+Playlist Creator - 2020-12-22_23-37-03: Got info of artist: imagine dragons
+Playlist Creator - 2020-12-22_23-37-03: Got song info for Imagine Dragons - Thunder successfully
+Playlist Creator - 2020-12-22_23-37-03: Creating playlist by songs
+Playlist Creator - 2020-12-22_23-37-03: Appending all similar songs
+Playlist Creator - 2020-12-22_23-37-03: Getting similar tracks for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_23-37-03: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: Vigiland
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: Avicii
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: Zayde Wlf
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: Alan Walker
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: Alessia Cara
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: OneRepublic
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: League of Legends
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: Ed Sheeran
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: Rachel Platten
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: Kygo
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: Fall Out Boy
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: Halsey
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: Shawn Mendes
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: Bruno Mars
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: Imagine Dragons
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: The Script
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: Pitbull
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: Marshmello
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: Fall Out Boy
+Playlist Creator - 2020-12-22_23-37-03: Getting info of artist: Ed Sheeran
+Playlist Creator - 2020-12-22_23-37-03: Set similar song: Imagine Dragons - Believer - Kaskade Remix
+Playlist Creator - 2020-12-22_23-37-08: Got info of artist: Vigiland
+Playlist Creator - 2020-12-22_23-37-08: Set similar song: Vigiland - Friday Night
+Playlist Creator - 2020-12-22_23-37-11: Got info of artist: OneRepublic
+Playlist Creator - 2020-12-22_23-37-11: Set similar song: OneRepublic - Rich Love with Seeb
+Playlist Creator - 2020-12-22_23-37-15: Got info of artist: Alan Walker
+Playlist Creator - 2020-12-22_23-37-15: Set similar song: Alan Walker - Alone
+Playlist Creator - 2020-12-22_23-37-19: Got info of artist: Zayde Wlf
+Playlist Creator - 2020-12-22_23-37-19: Set similar song: Zayde Wlf - Gladiator
+Playlist Creator - 2020-12-22_23-37-27: Got info of artist: Rachel Platten
+Playlist Creator - 2020-12-22_23-37-27: Set similar song: Rachel Platten - Fight Song
+Playlist Creator - 2020-12-22_23-37-30: Got info of artist: Fall Out Boy
+Playlist Creator - 2020-12-22_23-37-30: Set similar song: Fall Out Boy - Champion
+Playlist Creator - 2020-12-22_23-37-34: Got info of artist: Alessia Cara
+Playlist Creator - 2020-12-22_23-37-34: Set similar song: Alessia Cara - Scars To Your Beautiful
+Playlist Creator - 2020-12-22_23-37-38: Got info of artist: Avicii
+Playlist Creator - 2020-12-22_23-37-38: Set similar song: Avicii - Without You feat Sandro Cavazza
+Playlist Creator - 2020-12-22_23-37-43: Got info of artist: Shawn Mendes
+Playlist Creator - 2020-12-22_23-37-43: Set similar song: Shawn Mendes - Theres Nothing Holdin Me Back
+Playlist Creator - 2020-12-22_23-37-43: Got info of artist: League of Legends
+Playlist Creator - 2020-12-22_23-37-43: Set similar song: League of Legends - RISE
+Playlist Creator - 2020-12-22_23-37-46: Got info of artist: Bruno Mars
+Playlist Creator - 2020-12-22_23-37-46: Set similar song: Bruno Mars - Finesse - Remix feat Cardi B
+Playlist Creator - 2020-12-22_23-37-51: Got info of artist: Halsey
+Playlist Creator - 2020-12-22_23-37-51: Set similar song: Halsey - Bad At Love
+Playlist Creator - 2020-12-22_23-37-55: Got info of artist: Ed Sheeran
+Playlist Creator - 2020-12-22_23-37-55: Set similar song: Ed Sheeran - Castle on the Hill
+Playlist Creator - 2020-12-22_23-38-02: Got info of artist: Kygo
+Playlist Creator - 2020-12-22_23-38-02: Set similar song: Kygo - Born To Be Yours
+Playlist Creator - 2020-12-22_23-38-03: Got info of artist: Marshmello
+Playlist Creator - 2020-12-22_23-38-03: Set similar song: Marshmello - Stars
+Playlist Creator - 2020-12-22_23-38-04: Got info of artist: Fall Out Boy
+Playlist Creator - 2020-12-22_23-38-04: Set similar song: Fall Out Boy - Immortals - From Big Hero 6
+Playlist Creator - 2020-12-22_23-38-07: Got info of artist: The Script
+Playlist Creator - 2020-12-22_23-38-07: Set similar song: The Script - Superheroes
+Playlist Creator - 2020-12-22_23-38-11: Got info of artist: Ed Sheeran
+Playlist Creator - 2020-12-22_23-38-11: Set similar song: Ed Sheeran - Nancy Mulligan
+Playlist Creator - 2020-12-22_23-38-14: Got info of artist: Pitbull
+Playlist Creator - 2020-12-22_23-38-14: Set similar song: Pitbull - Timber feat Keha
+Playlist Creator - 2020-12-22_23-38-14: Adding similar for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_23-38-14: Still waiting to finish
+Playlist Creator - 2020-12-22_23-38-14: Finished appending all similar songs
+Playlist Creator - 2020-12-22_23-38-14: Doing Candidate Generation step
+Playlist Creator - 2020-12-22_23-38-14: Calculating weights for songs
+Playlist Creator - 2020-12-22_23-38-14: Setting weights for songs
+Playlist Creator - 2020-12-22_23-38-14: Setting weights for songs is done

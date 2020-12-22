@@ -1,0 +1,75 @@
+Playlist Creator - 2020-12-23_00-16-44: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-16-45: Getting info of artist: imagine dragons
+Playlist Creator - 2020-12-23_00-16-50: Got info of artist: imagine dragons
+Playlist Creator - 2020-12-23_00-16-50: Got song info for Imagine Dragons - Thunder successfully
+Playlist Creator - 2020-12-23_00-16-50: Creating playlist by songs
+Playlist Creator - 2020-12-23_00-16-50: Appending all similar songs
+Playlist Creator - 2020-12-23_00-16-50: Getting similar tracks for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-16-50: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: Meghan Trainor
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: Hailee Steinfeld
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: Bruno Mars
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: Welshly Arms
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: RagnBone Man
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: The Chainsmokers
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: Bebe Rexha
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: Skillet
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: Zedd
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: Alan Walker
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: Jason Derulo
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: OneRepublic
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: Halsey
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: Marshmello
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: MAGIC
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: Maroon 5
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: Jon Bellion
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: The Script
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: Macklemore
+Playlist Creator - 2020-12-23_00-16-50: Getting info of artist: Avicii
+Playlist Creator - 2020-12-23_00-16-54: Got info of artist: Meghan Trainor
+Playlist Creator - 2020-12-23_00-16-54: Set similar song: Meghan Trainor - Im a Lady - from SMURFS: THE LOST VILLAGE
+Playlist Creator - 2020-12-23_00-16-58: Got info of artist: Jon Bellion
+Playlist Creator - 2020-12-23_00-16-58: Set similar song: Jon Bellion - All Time Low
+Playlist Creator - 2020-12-23_00-17-01: Got info of artist: Macklemore
+Playlist Creator - 2020-12-23_00-17-01: Set similar song: Macklemore - Good Old Days feat Kesha
+Playlist Creator - 2020-12-23_00-17-04: Got info of artist: Zedd
+Playlist Creator - 2020-12-23_00-17-04: Set similar song: Zedd - The Middle
+Playlist Creator - 2020-12-23_00-17-08: Got info of artist: Jason Derulo
+Playlist Creator - 2020-12-23_00-17-08: Set similar song: Jason Derulo - Swalla feat Nicki Minaj  Ty Dolla ign
+Playlist Creator - 2020-12-23_00-17-14: Got info of artist: Skillet
+Playlist Creator - 2020-12-23_00-17-14: Set similar song: Skillet - Monster
+Playlist Creator - 2020-12-23_00-17-18: Got info of artist: Hailee Steinfeld
+Playlist Creator - 2020-12-23_00-17-18: Set similar song: Hailee Steinfeld - Most Girls
+Playlist Creator - 2020-12-23_00-17-22: Got info of artist: The Script
+Playlist Creator - 2020-12-23_00-17-22: Set similar song: The Script - Superheroes
+Playlist Creator - 2020-12-23_00-17-25: Got info of artist: OneRepublic
+Playlist Creator - 2020-12-23_00-17-25: Set similar song: OneRepublic - Rescue Me
+Playlist Creator - 2020-12-23_00-17-33: Got info of artist: Maroon 5
+Playlist Creator - 2020-12-23_00-17-33: Set similar song: Maroon 5 - Maps
+Playlist Creator - 2020-12-23_00-17-34: Got info of artist: Alan Walker
+Playlist Creator - 2020-12-23_00-17-34: Set similar song: Alan Walker - Darkside
+Playlist Creator - 2020-12-23_00-17-37: Got info of artist: Marshmello
+Playlist Creator - 2020-12-23_00-17-37: Set similar song: Marshmello - Fly
+Playlist Creator - 2020-12-23_00-17-42: Got info of artist: Welshly Arms
+Playlist Creator - 2020-12-23_00-17-42: Set similar song: Welshly Arms - Legendary
+Playlist Creator - 2020-12-23_00-17-45: Got info of artist: Bruno Mars
+Playlist Creator - 2020-12-23_00-17-45: Set similar song: Bruno Mars - Thats What I Like
+Playlist Creator - 2020-12-23_00-17-49: Got info of artist: Bebe Rexha
+Playlist Creator - 2020-12-23_00-17-49: Set similar song: Bebe Rexha - I Got You
+Playlist Creator - 2020-12-23_00-17-52: Got info of artist: Halsey
+Playlist Creator - 2020-12-23_00-17-52: Set similar song: Halsey - Bad At Love
+Playlist Creator - 2020-12-23_00-17-53: Got info of artist: MAGIC
+Playlist Creator - 2020-12-23_00-17-53: Set similar song: MAGIC - Rude Acoustic
+Playlist Creator - 2020-12-23_00-17-57: Got info of artist: RagnBone Man
+Playlist Creator - 2020-12-23_00-17-57: Set similar song: RagnBone Man - Skin
+Playlist Creator - 2020-12-23_00-18-01: Got info of artist: Avicii
+Playlist Creator - 2020-12-23_00-18-01: Set similar song: Avicii - The Nights
+Playlist Creator - 2020-12-23_00-18-06: Got info of artist: The Chainsmokers
+Playlist Creator - 2020-12-23_00-18-06: Set similar song: The Chainsmokers - Closer
+Playlist Creator - 2020-12-23_00-18-06: Adding similar for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-18-06: Still waiting to finish
+Playlist Creator - 2020-12-23_00-18-06: Finished appending all similar songs
+Playlist Creator - 2020-12-23_00-18-06: Doing Candidate Generation step
+Playlist Creator - 2020-12-23_00-18-06: Calculating weights for songs
+Playlist Creator - 2020-12-23_00-18-06: Setting weights for songs
+Playlist Creator - 2020-12-23_00-18-06: Setting weights for songs is done

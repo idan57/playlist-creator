@@ -1,0 +1,74 @@
+Playlist Creator - 2020-12-23_00-06-21: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-06-22: Getting info of artist: imagine dragons
+Playlist Creator - 2020-12-23_00-06-26: Got info of artist: imagine dragons
+Playlist Creator - 2020-12-23_00-06-26: Got song info for Imagine Dragons - Thunder successfully
+Playlist Creator - 2020-12-23_00-06-26: Creating playlist by songs
+Playlist Creator - 2020-12-23_00-06-26: Appending all similar songs
+Playlist Creator - 2020-12-23_00-06-26: Getting similar tracks for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-06-26: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: Bebe Rexha
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: Bruno Mars
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: TheFatRat
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: Marshmello
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: MAGIC
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: Demi Lovato
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: The Score
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: OneRepublic
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: Imagine Dragons
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: Katy Perry
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: Fall Out Boy
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: Alan Walker
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: Maroon 5
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: American Authors
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: WALK THE MOON
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: STARSET
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: David Guetta
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: Bebe Rexha
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: Macklemore
+Playlist Creator - 2020-12-23_00-06-27: Getting info of artist: Panic At The Disco
+Playlist Creator - 2020-12-23_00-06-27: Set similar song: Imagine Dragons - Whatever It Takes
+Playlist Creator - 2020-12-23_00-06-30: Got info of artist: Bebe Rexha
+Playlist Creator - 2020-12-23_00-06-30: Set similar song: Bebe Rexha - The Way I Are Dance with Somebody feat Lil Wayne
+Playlist Creator - 2020-12-23_00-06-33: Got info of artist: WALK THE MOON
+Playlist Creator - 2020-12-23_00-06-33: Set similar song: WALK THE MOON - Ghostbusters
+Playlist Creator - 2020-12-23_00-06-37: Got info of artist: OneRepublic
+Playlist Creator - 2020-12-23_00-06-37: Set similar song: OneRepublic - Connection
+Playlist Creator - 2020-12-23_00-06-41: Got info of artist: Demi Lovato
+Playlist Creator - 2020-12-23_00-06-41: Set similar song: Demi Lovato - Sorry Not Sorry
+Playlist Creator - 2020-12-23_00-06-48: Got info of artist: TheFatRat
+Playlist Creator - 2020-12-23_00-06-48: Set similar song: TheFatRat - Unity
+Playlist Creator - 2020-12-23_00-06-53: Got info of artist: Maroon 5
+Playlist Creator - 2020-12-23_00-06-53: Set similar song: Maroon 5 - Moves Like Jagger - Studio Recording From The Voice Performance
+Playlist Creator - 2020-12-23_00-06-56: Got info of artist: The Score
+Playlist Creator - 2020-12-23_00-06-56: Set similar song: The Score - On And On
+Playlist Creator - 2020-12-23_00-06-59: Got info of artist: Bruno Mars
+Playlist Creator - 2020-12-23_00-06-59: Set similar song: Bruno Mars - 24K Magic
+Playlist Creator - 2020-12-23_00-07-04: Got info of artist: Katy Perry
+Playlist Creator - 2020-12-23_00-07-04: Set similar song: Katy Perry - Bon apptit
+Playlist Creator - 2020-12-23_00-07-08: Got info of artist: Macklemore
+Playlist Creator - 2020-12-23_00-07-08: Set similar song: Macklemore - Marmalade feat Lil Yachty
+Playlist Creator - 2020-12-23_00-07-08: Got info of artist: Bebe Rexha
+Playlist Creator - 2020-12-23_00-07-08: Set similar song: Bebe Rexha - Meant to Be feat Florida Georgia Line
+Playlist Creator - 2020-12-23_00-07-09: Got info of artist: Fall Out Boy
+Playlist Creator - 2020-12-23_00-07-09: Set similar song: Fall Out Boy - Immortals
+Playlist Creator - 2020-12-23_00-07-15: Got info of artist: STARSET
+Playlist Creator - 2020-12-23_00-07-15: Set similar song: STARSET - My Demons
+Playlist Creator - 2020-12-23_00-07-19: Got info of artist: Alan Walker
+Playlist Creator - 2020-12-23_00-07-19: Set similar song: Alan Walker - Spectre
+Playlist Creator - 2020-12-23_00-07-25: Got info of artist: American Authors
+Playlist Creator - 2020-12-23_00-07-25: Set similar song: American Authors - Im Born To Run
+Playlist Creator - 2020-12-23_00-07-27: Got info of artist: Marshmello
+Playlist Creator - 2020-12-23_00-07-27: Set similar song: Marshmello - Stars
+Playlist Creator - 2020-12-23_00-07-29: Got info of artist: David Guetta
+Playlist Creator - 2020-12-23_00-07-29: Set similar song: David Guetta - 2U feat Justin Bieber
+Playlist Creator - 2020-12-23_00-07-29: Got info of artist: MAGIC
+Playlist Creator - 2020-12-23_00-07-29: Set similar song: MAGIC - Rude Acoustic
+Playlist Creator - 2020-12-23_00-07-33: Got info of artist: Panic At The Disco
+Playlist Creator - 2020-12-23_00-07-33: Set similar song: Panic At The Disco - High Hopes
+Playlist Creator - 2020-12-23_00-07-33: Adding similar for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-07-33: Still waiting to finish
+Playlist Creator - 2020-12-23_00-07-33: Finished appending all similar songs
+Playlist Creator - 2020-12-23_00-07-33: Doing Candidate Generation step
+Playlist Creator - 2020-12-23_00-07-33: Calculating weights for songs
+Playlist Creator - 2020-12-23_00-07-33: Setting weights for songs
+Playlist Creator - 2020-12-23_00-07-33: Setting weights for songs is done

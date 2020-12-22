@@ -1,0 +1,74 @@
+Playlist Creator - 2020-12-23_00-12-23: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-12-24: Getting info of artist: imagine dragons
+Playlist Creator - 2020-12-23_00-12-28: Got info of artist: imagine dragons
+Playlist Creator - 2020-12-23_00-12-28: Got song info for Imagine Dragons - Thunder successfully
+Playlist Creator - 2020-12-23_00-12-28: Creating playlist by songs
+Playlist Creator - 2020-12-23_00-12-28: Appending all similar songs
+Playlist Creator - 2020-12-23_00-12-28: Getting similar tracks for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-12-28: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Sheppard
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Anne-Marie
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Rudimental
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Kelly Clarkson
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Selena Gomez
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Andy Grammer
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Set It Off
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Bebe Rexha
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Katy Perry
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Axwell  Ingrosso
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Fall Out Boy
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Hugh Jackman
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Imagine Dragons
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Alan Walker
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: The Chainsmokers
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Avicii
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Meghan Trainor
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Hailee Steinfeld
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: Bruno Mars
+Playlist Creator - 2020-12-23_00-12-28: Getting info of artist: The Score
+Playlist Creator - 2020-12-23_00-12-28: Set similar song: Imagine Dragons - Gold
+Playlist Creator - 2020-12-23_00-12-34: Got info of artist: The Score
+Playlist Creator - 2020-12-23_00-12-34: Set similar song: The Score - On And On
+Playlist Creator - 2020-12-23_00-12-38: Got info of artist: Avicii
+Playlist Creator - 2020-12-23_00-12-38: Set similar song: Avicii - Hey Brother
+Playlist Creator - 2020-12-23_00-12-38: Got info of artist: Sheppard
+Playlist Creator - 2020-12-23_00-12-38: Set similar song: Sheppard - Keep Me Crazy
+Playlist Creator - 2020-12-23_00-12-40: Got info of artist: Anne-Marie
+Playlist Creator - 2020-12-23_00-12-40: Set similar song: Anne-Marie - Ciao Adios
+Playlist Creator - 2020-12-23_00-12-44: Got info of artist: Katy Perry
+Playlist Creator - 2020-12-23_00-12-44: Set similar song: Katy Perry - Bon apptit
+Playlist Creator - 2020-12-23_00-12-47: Got info of artist: Selena Gomez
+Playlist Creator - 2020-12-23_00-12-47: Set similar song: Selena Gomez - Wolves
+Playlist Creator - 2020-12-23_00-12-51: Got info of artist: Set It Off
+Playlist Creator - 2020-12-23_00-12-51: Set similar song: Set It Off - Wolf in Sheeps Clothing
+Playlist Creator - 2020-12-23_00-12-56: Got info of artist: Axwell  Ingrosso
+Playlist Creator - 2020-12-23_00-12-56: Set similar song: Axwell  Ingrosso - Dreamer
+Playlist Creator - 2020-12-23_00-13-01: Got info of artist: Hailee Steinfeld
+Playlist Creator - 2020-12-23_00-13-01: Set similar song: Hailee Steinfeld - Let Me Go with Alesso Florida Georgia Line  watt
+Playlist Creator - 2020-12-23_00-13-06: Got info of artist: Bruno Mars
+Playlist Creator - 2020-12-23_00-13-06: Set similar song: Bruno Mars - Finesse - Remix feat Cardi B
+Playlist Creator - 2020-12-23_00-13-08: Got info of artist: Kelly Clarkson
+Playlist Creator - 2020-12-23_00-13-08: Set similar song: Kelly Clarkson - Love So Soft
+Playlist Creator - 2020-12-23_00-13-11: Got info of artist: Bebe Rexha
+Playlist Creator - 2020-12-23_00-13-11: Set similar song: Bebe Rexha - The Way I Are Dance with Somebody feat Lil Wayne
+Playlist Creator - 2020-12-23_00-13-16: Got info of artist: The Chainsmokers
+Playlist Creator - 2020-12-23_00-13-16: Set similar song: The Chainsmokers - Something Just Like This
+Playlist Creator - 2020-12-23_00-13-17: Got info of artist: Alan Walker
+Playlist Creator - 2020-12-23_00-13-17: Set similar song: Alan Walker - Darkside
+Playlist Creator - 2020-12-23_00-13-21: Got info of artist: Meghan Trainor
+Playlist Creator - 2020-12-23_00-13-21: Set similar song: Meghan Trainor - Im a Lady - from SMURFS: THE LOST VILLAGE
+Playlist Creator - 2020-12-23_00-13-27: Got info of artist: Hugh Jackman
+Playlist Creator - 2020-12-23_00-13-27: Set similar song: Hugh Jackman - The Greatest Show
+Playlist Creator - 2020-12-23_00-13-30: Got info of artist: Rudimental
+Playlist Creator - 2020-12-23_00-13-30: Set similar song: Rudimental - These Days feat Jess Glynne Macklemore  Dan Caplen
+Playlist Creator - 2020-12-23_00-13-35: Got info of artist: Andy Grammer
+Playlist Creator - 2020-12-23_00-13-35: Set similar song: Andy Grammer - Sinner
+Playlist Creator - 2020-12-23_00-13-35: Got info of artist: Fall Out Boy
+Playlist Creator - 2020-12-23_00-13-35: Set similar song: Fall Out Boy - My Songs Know What You Did In The Dark Light Em Up
+Playlist Creator - 2020-12-23_00-13-35: Adding similar for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-13-35: Still waiting to finish
+Playlist Creator - 2020-12-23_00-13-35: Finished appending all similar songs
+Playlist Creator - 2020-12-23_00-13-35: Doing Candidate Generation step
+Playlist Creator - 2020-12-23_00-13-35: Calculating weights for songs
+Playlist Creator - 2020-12-23_00-13-35: Setting weights for songs
+Playlist Creator - 2020-12-23_00-13-35: Setting weights for songs is done

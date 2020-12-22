@@ -1,0 +1,74 @@
+Playlist Creator - 2020-12-22_23-51-58: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_23-51-59: Getting info of artist: imagine dragons
+Playlist Creator - 2020-12-22_23-52-03: Got info of artist: imagine dragons
+Playlist Creator - 2020-12-22_23-52-03: Got song info for Imagine Dragons - Thunder successfully
+Playlist Creator - 2020-12-22_23-52-03: Creating playlist by songs
+Playlist Creator - 2020-12-22_23-52-03: Appending all similar songs
+Playlist Creator - 2020-12-22_23-52-03: Getting similar tracks for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_23-52-03: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: The Script
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: Imagine Dragons
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: Marshmello
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: OneRepublic
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: American Authors
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: Alessia Cara
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: Galantis
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: Shawn Mendes
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: George Ezra
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: Maroon 5
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: Panic At The Disco
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: TheFatRat
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: The Chainsmokers
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: Linkin Park
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: DJ Snake
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: Hailee Steinfeld
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: Bruno Mars
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: Sheppard
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: Train
+Playlist Creator - 2020-12-22_23-52-03: Set similar song: Imagine Dragons - Rise Up
+Playlist Creator - 2020-12-22_23-52-03: Getting info of artist: Selena Gomez
+Playlist Creator - 2020-12-22_23-52-06: Got info of artist: The Script
+Playlist Creator - 2020-12-22_23-52-06: Set similar song: The Script - Rain
+Playlist Creator - 2020-12-22_23-52-13: Got info of artist: The Chainsmokers
+Playlist Creator - 2020-12-22_23-52-13: Set similar song: The Chainsmokers - Something Just Like This
+Playlist Creator - 2020-12-22_23-52-18: Got info of artist: Shawn Mendes
+Playlist Creator - 2020-12-22_23-52-18: Set similar song: Shawn Mendes - Theres Nothing Holdin Me Back
+Playlist Creator - 2020-12-22_23-52-23: Got info of artist: Galantis
+Playlist Creator - 2020-12-22_23-52-23: Set similar song: Galantis - Hunter
+Playlist Creator - 2020-12-22_23-52-24: Got info of artist: Train
+Playlist Creator - 2020-12-22_23-52-24: Set similar song: Train - Play That Song
+Playlist Creator - 2020-12-22_23-52-29: Got info of artist: TheFatRat
+Playlist Creator - 2020-12-22_23-52-29: Set similar song: TheFatRat - Unity
+Playlist Creator - 2020-12-22_23-52-32: Got info of artist: Alessia Cara
+Playlist Creator - 2020-12-22_23-52-32: Set similar song: Alessia Cara - How Far Ill Go - From Moana
+Playlist Creator - 2020-12-22_23-52-38: Got info of artist: American Authors
+Playlist Creator - 2020-12-22_23-52-38: Set similar song: American Authors - Go Big Or Go Home
+Playlist Creator - 2020-12-22_23-52-42: Got info of artist: OneRepublic
+Playlist Creator - 2020-12-22_23-52-42: Set similar song: OneRepublic - Rescue Me
+Playlist Creator - 2020-12-22_23-52-45: Got info of artist: Panic At The Disco
+Playlist Creator - 2020-12-22_23-52-45: Set similar song: Panic At The Disco - Hey Look Ma I Made It
+Playlist Creator - 2020-12-22_23-52-53: Got info of artist: Linkin Park
+Playlist Creator - 2020-12-22_23-52-53: Set similar song: Linkin Park - Heavy feat Kiiara
+Playlist Creator - 2020-12-22_23-52-54: Got info of artist: DJ Snake
+Playlist Creator - 2020-12-22_23-52-54: Set similar song: DJ Snake - Let Me Love You - R3hab Remix
+Playlist Creator - 2020-12-22_23-52-57: Got info of artist: Bruno Mars
+Playlist Creator - 2020-12-22_23-52-57: Set similar song: Bruno Mars - Thats What I Like - Alan Walker Remix
+Playlist Creator - 2020-12-22_23-53-02: Got info of artist: George Ezra
+Playlist Creator - 2020-12-22_23-53-02: Set similar song: George Ezra - Paradise
+Playlist Creator - 2020-12-22_23-53-05: Got info of artist: Selena Gomez
+Playlist Creator - 2020-12-22_23-53-05: Set similar song: Selena Gomez - Wolves
+Playlist Creator - 2020-12-22_23-53-08: Got info of artist: Hailee Steinfeld
+Playlist Creator - 2020-12-22_23-53-08: Set similar song: Hailee Steinfeld - Most Girls
+Playlist Creator - 2020-12-22_23-53-10: Got info of artist: Sheppard
+Playlist Creator - 2020-12-22_23-53-10: Set similar song: Sheppard - Coming Home
+Playlist Creator - 2020-12-22_23-53-15: Got info of artist: Maroon 5
+Playlist Creator - 2020-12-22_23-53-15: Set similar song: Maroon 5 - Girls Like You feat Cardi B
+Playlist Creator - 2020-12-22_23-53-17: Got info of artist: Marshmello
+Playlist Creator - 2020-12-22_23-53-17: Set similar song: Marshmello - Summer
+Playlist Creator - 2020-12-22_23-53-17: Adding similar for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_23-53-17: Still waiting to finish
+Playlist Creator - 2020-12-22_23-53-17: Finished appending all similar songs
+Playlist Creator - 2020-12-22_23-53-17: Doing Candidate Generation step
+Playlist Creator - 2020-12-22_23-53-17: Calculating weights for songs
+Playlist Creator - 2020-12-22_23-53-17: Setting weights for songs
+Playlist Creator - 2020-12-22_23-53-17: Setting weights for songs is done

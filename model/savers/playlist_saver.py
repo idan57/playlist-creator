@@ -1,5 +1,7 @@
 import json
 from pathlib import Path
+import pylab as plt
+import matplotlib as mpl
 
 from model.savers.saver_interface import ISaver
 
@@ -31,8 +33,18 @@ class PlaylistSaver(ISaver):
         result_dict = {
             "songs": {}
         }
+        cols = ["ID", "Popularity", "Link"]
+        y = []
+        x = []
+        rows = []
+        table = []
         total_time_in_ms = 0
+        n = 0
         for song in songs:
+            table += [[n, song.Popularity, song.LinkToSong]]
+            y += [song.Popularity]
+            x += [n]
+            rows += [f"{song.Artists[0]} {song.Name}"]
             result_dict["songs"][song.ID] = {
                 "artists": song.Artists,
                 "name": song.Name,
@@ -40,6 +52,20 @@ class PlaylistSaver(ISaver):
                 "popularity": song.Popularity
             }
             total_time_in_ms += song.Duration
+
         result_dict["total_time_in_ms"] = total_time_in_ms
+        the_table = plt.table(cellText=table,
+                             colWidths=[0.4] * 3,
+                             rowLabels=rows,
+                             colLabels=cols,
+                             loc='center')
+        the_table.auto_set_font_size(False)
+
         result_json = json.dumps(result_dict)
         playlist_result_path.write_text(result_json)
+        mng = plt.get_current_fig_manager()
+        mng.resize(*mng.window.maxsize())
+        plt.axis('off')
+        plt.show()
+        plt.plot(x, y)
+        plt.show()

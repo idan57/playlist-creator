@@ -1,0 +1,73 @@
+Playlist Creator - 2020-12-23_00-40-35: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-40-36: Getting info of artist: imagine dragons
+Playlist Creator - 2020-12-23_00-40-40: Got info of artist: imagine dragons
+Playlist Creator - 2020-12-23_00-40-40: Got song info for Imagine Dragons - Thunder successfully
+Playlist Creator - 2020-12-23_00-40-40: Creating playlist by songs
+Playlist Creator - 2020-12-23_00-40-40: Appending all similar songs
+Playlist Creator - 2020-12-23_00-40-40: Getting similar tracks for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-40-40: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: ZAYN
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: Fall Out Boy
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: Imagine Dragons
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: Maroon 5
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: OneRepublic
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: Bruno Mars
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: Twenty One Pilots
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: Alan Walker
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: The Chainsmokers
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: Meghan Trainor
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: Camila Cabello
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: League of Legends
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: Galantis
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: Jason Mraz
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: Pnk
+Playlist Creator - 2020-12-23_00-40-41: Set similar song: Imagine Dragons - Whatever It Takes
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: Hailee Steinfeld
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: The Chainsmokers
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: Imagine Dragons
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: Sheppard
+Playlist Creator - 2020-12-23_00-40-41: Getting info of artist: Ed Sheeran
+Playlist Creator - 2020-12-23_00-40-41: Set similar song: Imagine Dragons - Demons
+Playlist Creator - 2020-12-23_00-40-45: Got info of artist: ZAYN
+Playlist Creator - 2020-12-23_00-40-45: Set similar song: ZAYN - Dusk Till Dawn feat Sia - Brooks Remix
+Playlist Creator - 2020-12-23_00-40-50: Got info of artist: The Chainsmokers
+Playlist Creator - 2020-12-23_00-40-50: Set similar song: The Chainsmokers - Paris
+Playlist Creator - 2020-12-23_00-40-53: Got info of artist: Bruno Mars
+Playlist Creator - 2020-12-23_00-40-53: Set similar song: Bruno Mars - Thats What I Like - Alan Walker Remix
+Playlist Creator - 2020-12-23_00-40-58: Got info of artist: Ed Sheeran
+Playlist Creator - 2020-12-23_00-40-58: Set similar song: Ed Sheeran - Perfect Duet Ed Sheeran  Beyonc
+Playlist Creator - 2020-12-23_00-41-02: Got info of artist: The Chainsmokers
+Playlist Creator - 2020-12-23_00-41-02: Set similar song: The Chainsmokers - Something Just Like This
+Playlist Creator - 2020-12-23_00-41-06: Got info of artist: Meghan Trainor
+Playlist Creator - 2020-12-23_00-41-06: Set similar song: Meghan Trainor - Im a Lady - from SMURFS: THE LOST VILLAGE
+Playlist Creator - 2020-12-23_00-41-12: Got info of artist: Twenty One Pilots
+Playlist Creator - 2020-12-23_00-41-12: Set similar song: Twenty One Pilots - Ride
+Playlist Creator - 2020-12-23_00-41-16: Got info of artist: Pnk
+Playlist Creator - 2020-12-23_00-41-16: Set similar song: Pnk - Just Like Fire From the Original Motion Picture Alice Through The Looking Glass
+Playlist Creator - 2020-12-23_00-41-22: Got info of artist: Maroon 5
+Playlist Creator - 2020-12-23_00-41-22: Set similar song: Maroon 5 - Animals
+Playlist Creator - 2020-12-23_00-41-26: Got info of artist: Galantis
+Playlist Creator - 2020-12-23_00-41-26: Set similar song: Galantis - Hunter
+Playlist Creator - 2020-12-23_00-41-29: Got info of artist: League of Legends
+Playlist Creator - 2020-12-23_00-41-29: Set similar song: League of Legends - Legends Never Die
+Playlist Creator - 2020-12-23_00-41-33: Got info of artist: Camila Cabello
+Playlist Creator - 2020-12-23_00-41-33: Set similar song: Camila Cabello - Never Be the Same
+Playlist Creator - 2020-12-23_00-41-35: Got info of artist: Sheppard
+Playlist Creator - 2020-12-23_00-41-35: Set similar song: Sheppard - Coming Home
+Playlist Creator - 2020-12-23_00-41-39: Got info of artist: Jason Mraz
+Playlist Creator - 2020-12-23_00-41-39: Set similar song: Jason Mraz - Have It All
+Playlist Creator - 2020-12-23_00-41-41: Got info of artist: Fall Out Boy
+Playlist Creator - 2020-12-23_00-41-41: Set similar song: Fall Out Boy - Young And Menace
+Playlist Creator - 2020-12-23_00-41-44: Got info of artist: OneRepublic
+Playlist Creator - 2020-12-23_00-41-44: Set similar song: OneRepublic - Counting Stars
+Playlist Creator - 2020-12-23_00-41-49: Got info of artist: Hailee Steinfeld
+Playlist Creator - 2020-12-23_00-41-49: Set similar song: Hailee Steinfeld - Most Girls
+Playlist Creator - 2020-12-23_00-41-52: Got info of artist: Alan Walker
+Playlist Creator - 2020-12-23_00-41-52: Set similar song: Alan Walker - All Falls Down feat Juliander
+Playlist Creator - 2020-12-23_00-41-52: Adding similar for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-41-52: Still waiting to finish
+Playlist Creator - 2020-12-23_00-41-52: Finished appending all similar songs
+Playlist Creator - 2020-12-23_00-41-52: Doing Candidate Generation step
+Playlist Creator - 2020-12-23_00-41-52: Calculating weights for songs
+Playlist Creator - 2020-12-23_00-41-52: Setting weights for songs
+Playlist Creator - 2020-12-23_00-41-52: Setting weights for songs is done

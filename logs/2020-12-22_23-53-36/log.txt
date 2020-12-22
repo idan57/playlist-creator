@@ -1,0 +1,73 @@
+Playlist Creator - 2020-12-22_23-53-36: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_23-53-37: Getting info of artist: imagine dragons
+Playlist Creator - 2020-12-22_23-53-41: Got info of artist: imagine dragons
+Playlist Creator - 2020-12-22_23-53-41: Got song info for Imagine Dragons - Thunder successfully
+Playlist Creator - 2020-12-22_23-53-41: Creating playlist by songs
+Playlist Creator - 2020-12-22_23-53-41: Appending all similar songs
+Playlist Creator - 2020-12-22_23-53-41: Getting similar tracks for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_23-53-41: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: Imagine Dragons
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: MKTO
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: Shawn Mendes
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: The Chainsmokers
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: OneRepublic
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: The Cab
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: Ed Sheeran
+Playlist Creator - 2020-12-22_23-53-41: Set similar song: Imagine Dragons - Natural
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: Imagine Dragons
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: Panic At The Disco
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: Selena Gomez
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: Kygo
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: Robin Schulz
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: OneRepublic
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: The Score
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: Flo Rida
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: DNCE
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: American Authors
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: AJR
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: Macklemore
+Playlist Creator - 2020-12-22_23-53-41: Getting info of artist: Maroon 5
+Playlist Creator - 2020-12-22_23-53-41: Set similar song: Imagine Dragons - I Bet My Life
+Playlist Creator - 2020-12-22_23-53-46: Got info of artist: MKTO
+Playlist Creator - 2020-12-22_23-53-46: Set similar song: MKTO - Just Imagine It
+Playlist Creator - 2020-12-22_23-53-51: Got info of artist: American Authors
+Playlist Creator - 2020-12-22_23-53-51: Set similar song: American Authors - Pocket Full Of Gold
+Playlist Creator - 2020-12-22_23-53-54: Got info of artist: Macklemore
+Playlist Creator - 2020-12-22_23-53-54: Set similar song: Macklemore - Good Old Days feat Kesha
+Playlist Creator - 2020-12-22_23-53-58: Got info of artist: OneRepublic
+Playlist Creator - 2020-12-22_23-53-58: Set similar song: OneRepublic - Connection
+Playlist Creator - 2020-12-22_23-54-09: Got info of artist: OneRepublic
+Playlist Creator - 2020-12-22_23-54-09: Set similar song: OneRepublic - Start Again feat Logic
+Playlist Creator - 2020-12-22_23-54-11: Got info of artist: Kygo
+Playlist Creator - 2020-12-22_23-54-11: Set similar song: Kygo - First Time
+Playlist Creator - 2020-12-22_23-54-18: Got info of artist: Shawn Mendes
+Playlist Creator - 2020-12-22_23-54-18: Set similar song: Shawn Mendes - In My Blood
+Playlist Creator - 2020-12-22_23-54-21: Got info of artist: Panic At The Disco
+Playlist Creator - 2020-12-22_23-54-21: Set similar song: Panic At The Disco - Say Amen Saturday Night
+Playlist Creator - 2020-12-22_23-54-25: Got info of artist: DNCE
+Playlist Creator - 2020-12-22_23-54-25: Set similar song: DNCE - Kissing Strangers
+Playlist Creator - 2020-12-22_23-54-30: Got info of artist: Ed Sheeran
+Playlist Creator - 2020-12-22_23-54-30: Set similar song: Ed Sheeran - Galway Girl
+Playlist Creator - 2020-12-22_23-54-34: Got info of artist: The Cab
+Playlist Creator - 2020-12-22_23-54-34: Set similar song: The Cab - Angel With A Shotgun
+Playlist Creator - 2020-12-22_23-54-34: Got info of artist: The Chainsmokers
+Playlist Creator - 2020-12-22_23-54-34: Set similar song: The Chainsmokers - Paris
+Playlist Creator - 2020-12-22_23-54-37: Got info of artist: The Score
+Playlist Creator - 2020-12-22_23-54-37: Set similar song: The Score - On And On
+Playlist Creator - 2020-12-22_23-54-42: Got info of artist: Maroon 5
+Playlist Creator - 2020-12-22_23-54-42: Set similar song: Maroon 5 - Memories
+Playlist Creator - 2020-12-22_23-54-44: Got info of artist: Selena Gomez
+Playlist Creator - 2020-12-22_23-54-44: Set similar song: Selena Gomez - Wolves
+Playlist Creator - 2020-12-22_23-54-48: Got info of artist: AJR
+Playlist Creator - 2020-12-22_23-54-48: Set similar song: AJR - Weak
+Playlist Creator - 2020-12-22_23-54-49: Got info of artist: Flo Rida
+Playlist Creator - 2020-12-22_23-54-49: Set similar song: Flo Rida - Cake - Challenge Version
+Playlist Creator - 2020-12-22_23-54-49: Got info of artist: Robin Schulz
+Playlist Creator - 2020-12-22_23-54-49: Set similar song: Robin Schulz - OK
+Playlist Creator - 2020-12-22_23-54-49: Adding similar for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_23-54-49: Still waiting to finish
+Playlist Creator - 2020-12-22_23-54-49: Finished appending all similar songs
+Playlist Creator - 2020-12-22_23-54-49: Doing Candidate Generation step
+Playlist Creator - 2020-12-22_23-54-49: Calculating weights for songs
+Playlist Creator - 2020-12-22_23-54-49: Setting weights for songs
+Playlist Creator - 2020-12-22_23-54-49: Setting weights for songs is done

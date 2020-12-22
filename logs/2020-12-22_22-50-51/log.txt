@@ -1,0 +1,75 @@
+Playlist Creator - 2020-12-22_22-50-51: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_22-50-52: Getting info of artist: imagine dragons
+Playlist Creator - 2020-12-22_22-50-56: Got info of artist: imagine dragons
+Playlist Creator - 2020-12-22_22-50-56: Got song info for Imagine Dragons - Thunder successfully
+Playlist Creator - 2020-12-22_22-50-56: Creating playlist by songs
+Playlist Creator - 2020-12-22_22-50-56: Appending all similar songs
+Playlist Creator - 2020-12-22_22-50-56: Getting similar tracks for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_22-50-56: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: Shawn Mendes
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: Meghan Trainor
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: Maroon 5
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: ZAYN
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: Coldplay
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: Calvin Harris
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: STARSET
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: Fifth Harmony
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: Skillet
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: Twenty One Pilots
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: Sheppard
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: Kelly Clarkson
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: Hugh Jackman
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: Meghan Trainor
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: Marshmello
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: Selena Gomez
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: Charlie Puth
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: Fall Out Boy
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: DJ Snake
+Playlist Creator - 2020-12-22_22-50-56: Getting info of artist: Bebe Rexha
+Playlist Creator - 2020-12-22_22-51-01: Got info of artist: Shawn Mendes
+Playlist Creator - 2020-12-22_22-51-01: Set similar song: Shawn Mendes - Theres Nothing Holdin Me Back
+Playlist Creator - 2020-12-22_22-51-13: Got info of artist: Coldplay
+Playlist Creator - 2020-12-22_22-51-13: Set similar song: Coldplay - Hymn for the Weekend
+Playlist Creator - 2020-12-22_22-51-21: Got info of artist: Twenty One Pilots
+Playlist Creator - 2020-12-22_22-51-21: Set similar song: Twenty One Pilots - Heathens
+Playlist Creator - 2020-12-22_22-51-23: Got info of artist: Sheppard
+Playlist Creator - 2020-12-22_22-51-23: Set similar song: Sheppard - Keep Me Crazy
+Playlist Creator - 2020-12-22_22-51-41: Got info of artist: Maroon 5
+Playlist Creator - 2020-12-22_22-51-41: Set similar song: Maroon 5 - Sugar
+Playlist Creator - 2020-12-22_22-51-43: Got info of artist: Selena Gomez
+Playlist Creator - 2020-12-22_22-51-43: Set similar song: Selena Gomez - Wolves
+Playlist Creator - 2020-12-22_22-51-49: Got info of artist: Kelly Clarkson
+Playlist Creator - 2020-12-22_22-51-49: Set similar song: Kelly Clarkson - Love So Soft
+Playlist Creator - 2020-12-22_22-51-56: Got info of artist: Fifth Harmony
+Playlist Creator - 2020-12-22_22-51-56: Set similar song: Fifth Harmony - Down feat Gucci Mane
+Playlist Creator - 2020-12-22_22-51-59: Got info of artist: STARSET
+Playlist Creator - 2020-12-22_22-51-59: Set similar song: STARSET - My Demons
+Playlist Creator - 2020-12-22_22-52-01: Got info of artist: Marshmello
+Playlist Creator - 2020-12-22_22-52-01: Set similar song: Marshmello - Alone
+Playlist Creator - 2020-12-22_22-52-02: Got info of artist: Charlie Puth
+Playlist Creator - 2020-12-22_22-52-02: Set similar song: Charlie Puth - Attention
+Playlist Creator - 2020-12-22_22-52-04: Got info of artist: Hugh Jackman
+Playlist Creator - 2020-12-22_22-52-04: Set similar song: Hugh Jackman - The Greatest Show
+Playlist Creator - 2020-12-22_22-52-05: Got info of artist: ZAYN
+Playlist Creator - 2020-12-22_22-52-05: Set similar song: ZAYN - Dusk Till Dawn feat Sia - Brooks Remix
+Playlist Creator - 2020-12-22_22-52-07: Got info of artist: Bebe Rexha
+Playlist Creator - 2020-12-22_22-52-07: Set similar song: Bebe Rexha - I Got You
+Playlist Creator - 2020-12-22_22-52-08: Got info of artist: Fall Out Boy
+Playlist Creator - 2020-12-22_22-52-08: Set similar song: Fall Out Boy - Young And Menace
+Playlist Creator - 2020-12-22_22-52-10: Got info of artist: Meghan Trainor
+Playlist Creator - 2020-12-22_22-52-10: Set similar song: Meghan Trainor - Better When Im Dancin
+Playlist Creator - 2020-12-22_22-52-12: Got info of artist: Meghan Trainor
+Playlist Creator - 2020-12-22_22-52-12: Set similar song: Meghan Trainor - No Excuses
+Playlist Creator - 2020-12-22_22-52-16: Got info of artist: Skillet
+Playlist Creator - 2020-12-22_22-52-16: Set similar song: Skillet - Feel Invincible
+Playlist Creator - 2020-12-22_22-52-17: Got info of artist: DJ Snake
+Playlist Creator - 2020-12-22_22-52-17: Set similar song: DJ Snake - Taki Taki feat Selena Gomez Ozuna  Cardi B
+Playlist Creator - 2020-12-22_22-52-18: Got info of artist: Calvin Harris
+Playlist Creator - 2020-12-22_22-52-18: Set similar song: Calvin Harris - My Way
+Playlist Creator - 2020-12-22_22-52-18: Adding similar for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-22_22-52-18: Still waiting to finish
+Playlist Creator - 2020-12-22_22-52-18: Finished appending all similar songs
+Playlist Creator - 2020-12-22_22-52-18: Doing Candidate Generation step
+Playlist Creator - 2020-12-22_22-52-18: Calculating weights for songs
+Playlist Creator - 2020-12-22_22-52-18: Setting weights for songs
+Playlist Creator - 2020-12-22_22-52-18: Setting weights for songs is done

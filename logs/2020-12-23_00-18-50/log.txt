@@ -1,0 +1,74 @@
+Playlist Creator - 2020-12-23_00-18-50: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-18-51: Getting info of artist: imagine dragons
+Playlist Creator - 2020-12-23_00-18-55: Got info of artist: imagine dragons
+Playlist Creator - 2020-12-23_00-18-55: Got song info for Imagine Dragons - Thunder successfully
+Playlist Creator - 2020-12-23_00-18-55: Creating playlist by songs
+Playlist Creator - 2020-12-23_00-18-55: Appending all similar songs
+Playlist Creator - 2020-12-23_00-18-55: Getting similar tracks for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-18-55: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: Maroon 5
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: Avicii
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: OneRepublic
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: Linkin Park
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: Shawn Mendes
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: Zayde Wlf
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: Meghan Trainor
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: Twenty One Pilots
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: Avicii
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: Fall Out Boy
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: Shawn Mendes
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: Axwell  Ingrosso
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: MAGIC
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: Clean Bandit
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: The Chainsmokers
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: Marshmello
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: Lukas Graham
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: League of Legends
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: Imagine Dragons
+Playlist Creator - 2020-12-23_00-18-56: Getting info of artist: Ed Sheeran
+Playlist Creator - 2020-12-23_00-18-56: Set similar song: Imagine Dragons - Bad Liar
+Playlist Creator - 2020-12-23_00-19-01: Got info of artist: Maroon 5
+Playlist Creator - 2020-12-23_00-19-01: Set similar song: Maroon 5 - Animals
+Playlist Creator - 2020-12-23_00-19-06: Got info of artist: The Chainsmokers
+Playlist Creator - 2020-12-23_00-19-06: Set similar song: The Chainsmokers - Something Just Like This
+Playlist Creator - 2020-12-23_00-19-10: Got info of artist: Avicii
+Playlist Creator - 2020-12-23_00-19-10: Set similar song: Avicii - Lonely Together feat Rita Ora
+Playlist Creator - 2020-12-23_00-19-13: Got info of artist: Marshmello
+Playlist Creator - 2020-12-23_00-19-13: Set similar song: Marshmello - Stars
+Playlist Creator - 2020-12-23_00-19-18: Got info of artist: Axwell  Ingrosso
+Playlist Creator - 2020-12-23_00-19-18: Set similar song: Axwell  Ingrosso - Dreamer
+Playlist Creator - 2020-12-23_00-19-23: Got info of artist: Linkin Park
+Playlist Creator - 2020-12-23_00-19-23: Set similar song: Linkin Park - Heavy feat Kiiara
+Playlist Creator - 2020-12-23_00-19-26: Got info of artist: Fall Out Boy
+Playlist Creator - 2020-12-23_00-19-26: Set similar song: Fall Out Boy - Young And Menace
+Playlist Creator - 2020-12-23_00-19-29: Got info of artist: Meghan Trainor
+Playlist Creator - 2020-12-23_00-19-29: Set similar song: Meghan Trainor - No Excuses
+Playlist Creator - 2020-12-23_00-19-35: Got info of artist: Shawn Mendes
+Playlist Creator - 2020-12-23_00-19-35: Set similar song: Shawn Mendes - Treat You Better
+Playlist Creator - 2020-12-23_00-19-46: Got info of artist: OneRepublic
+Playlist Creator - 2020-12-23_00-19-46: Set similar song: OneRepublic - No Vacancy
+Playlist Creator - 2020-12-23_00-19-47: Got info of artist: Shawn Mendes
+Playlist Creator - 2020-12-23_00-19-47: Set similar song: Shawn Mendes - If I Cant Have You
+Playlist Creator - 2020-12-23_00-19-47: Got info of artist: MAGIC
+Playlist Creator - 2020-12-23_00-19-47: Set similar song: MAGIC - Rude Acoustic
+Playlist Creator - 2020-12-23_00-19-52: Got info of artist: Lukas Graham
+Playlist Creator - 2020-12-23_00-19-52: Set similar song: Lukas Graham - 7 Years
+Playlist Creator - 2020-12-23_00-19-57: Got info of artist: Clean Bandit
+Playlist Creator - 2020-12-23_00-19-57: Set similar song: Clean Bandit - Rockabye feat Sean Paul  Anne-Marie
+Playlist Creator - 2020-12-23_00-20-01: Got info of artist: Avicii
+Playlist Creator - 2020-12-23_00-20-01: Set similar song: Avicii - Without You feat Sandro Cavazza
+Playlist Creator - 2020-12-23_00-20-04: Got info of artist: League of Legends
+Playlist Creator - 2020-12-23_00-20-04: Set similar song: League of Legends - Worlds Collide
+Playlist Creator - 2020-12-23_00-20-08: Got info of artist: Ed Sheeran
+Playlist Creator - 2020-12-23_00-20-08: Set similar song: Ed Sheeran - Perfect
+Playlist Creator - 2020-12-23_00-20-10: Got info of artist: Zayde Wlf
+Playlist Creator - 2020-12-23_00-20-10: Set similar song: Zayde Wlf - Gladiator
+Playlist Creator - 2020-12-23_00-20-16: Got info of artist: Twenty One Pilots
+Playlist Creator - 2020-12-23_00-20-16: Set similar song: Twenty One Pilots - Ride
+Playlist Creator - 2020-12-23_00-20-16: Adding similar for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-20-16: Still waiting to finish
+Playlist Creator - 2020-12-23_00-20-16: Finished appending all similar songs
+Playlist Creator - 2020-12-23_00-20-16: Doing Candidate Generation step
+Playlist Creator - 2020-12-23_00-20-16: Calculating weights for songs
+Playlist Creator - 2020-12-23_00-20-16: Setting weights for songs
+Playlist Creator - 2020-12-23_00-20-16: Setting weights for songs is done

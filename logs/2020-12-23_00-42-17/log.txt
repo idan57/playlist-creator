@@ -1,0 +1,75 @@
+Playlist Creator - 2020-12-23_00-42-17: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-42-18: Getting info of artist: imagine dragons
+Playlist Creator - 2020-12-23_00-42-23: Got info of artist: imagine dragons
+Playlist Creator - 2020-12-23_00-42-23: Got song info for Imagine Dragons - Thunder successfully
+Playlist Creator - 2020-12-23_00-42-23: Creating playlist by songs
+Playlist Creator - 2020-12-23_00-42-23: Appending all similar songs
+Playlist Creator - 2020-12-23_00-42-23: Getting similar tracks for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-42-23: Getting song info for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: Bruno Mars
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: Hailee Steinfeld
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: Avicii
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: ZAYN
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: Steve Aoki
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: Fitz and The Tantrums
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: Lost Frequencies
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: American Authors
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: Linkin Park
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: DNCE
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: Nickelback
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: Martin Garrix
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: WALK THE MOON
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: Ed Sheeran
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: Axwell  Ingrosso
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: Skillet
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: TheFatRat
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: Jon Bellion
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: Maroon 5
+Playlist Creator - 2020-12-23_00-42-23: Getting info of artist: Alessia Cara
+Playlist Creator - 2020-12-23_00-42-26: Got info of artist: Bruno Mars
+Playlist Creator - 2020-12-23_00-42-26: Set similar song: Bruno Mars - 24K Magic
+Playlist Creator - 2020-12-23_00-42-31: Got info of artist: Linkin Park
+Playlist Creator - 2020-12-23_00-42-31: Set similar song: Linkin Park - Battle Symphony
+Playlist Creator - 2020-12-23_00-42-36: Got info of artist: TheFatRat
+Playlist Creator - 2020-12-23_00-42-36: Set similar song: TheFatRat - Unity
+Playlist Creator - 2020-12-23_00-42-41: Got info of artist: Ed Sheeran
+Playlist Creator - 2020-12-23_00-42-41: Set similar song: Ed Sheeran - Perfect Duet Ed Sheeran  Beyonc
+Playlist Creator - 2020-12-23_00-42-46: Got info of artist: WALK THE MOON
+Playlist Creator - 2020-12-23_00-42-46: Set similar song: WALK THE MOON - Shut Up and Dance
+Playlist Creator - 2020-12-23_00-42-50: Got info of artist: Martin Garrix
+Playlist Creator - 2020-12-23_00-42-50: Set similar song: Martin Garrix - Scared to Be Lonely
+Playlist Creator - 2020-12-23_00-42-55: Got info of artist: DNCE
+Playlist Creator - 2020-12-23_00-42-55: Set similar song: DNCE - Good Day
+Playlist Creator - 2020-12-23_00-43-00: Got info of artist: American Authors
+Playlist Creator - 2020-12-23_00-43-00: Set similar song: American Authors - Go Big Or Go Home
+Playlist Creator - 2020-12-23_00-43-01: Got info of artist: Steve Aoki
+Playlist Creator - 2020-12-23_00-43-01: Set similar song: Steve Aoki - Just Hold On
+Playlist Creator - 2020-12-23_00-43-04: Got info of artist: Alessia Cara
+Playlist Creator - 2020-12-23_00-43-04: Set similar song: Alessia Cara - How Far Ill Go - From Moana
+Playlist Creator - 2020-12-23_00-43-10: Got info of artist: Nickelback
+Playlist Creator - 2020-12-23_00-43-10: Set similar song: Nickelback - Song On Fire
+Playlist Creator - 2020-12-23_00-43-14: Got info of artist: Jon Bellion
+Playlist Creator - 2020-12-23_00-43-14: Set similar song: Jon Bellion - All Time Low
+Playlist Creator - 2020-12-23_00-43-17: Got info of artist: Lost Frequencies
+Playlist Creator - 2020-12-23_00-43-17: Set similar song: Lost Frequencies - Crazy
+Playlist Creator - 2020-12-23_00-43-23: Got info of artist: Maroon 5
+Playlist Creator - 2020-12-23_00-43-23: Set similar song: Maroon 5 - Animals
+Playlist Creator - 2020-12-23_00-43-27: Got info of artist: Avicii
+Playlist Creator - 2020-12-23_00-43-27: Set similar song: Avicii - Waiting For Love
+Playlist Creator - 2020-12-23_00-43-32: Got info of artist: Axwell  Ingrosso
+Playlist Creator - 2020-12-23_00-43-32: Set similar song: Axwell  Ingrosso - Dreamer
+Playlist Creator - 2020-12-23_00-43-36: Got info of artist: Hailee Steinfeld
+Playlist Creator - 2020-12-23_00-43-36: Set similar song: Hailee Steinfeld - Let Me Go with Alesso Florida Georgia Line  watt
+Playlist Creator - 2020-12-23_00-43-41: Got info of artist: Fitz and The Tantrums
+Playlist Creator - 2020-12-23_00-43-41: Set similar song: Fitz and The Tantrums - Fool
+Playlist Creator - 2020-12-23_00-43-46: Got info of artist: Skillet
+Playlist Creator - 2020-12-23_00-43-46: Set similar song: Skillet - Monster
+Playlist Creator - 2020-12-23_00-43-51: Got info of artist: ZAYN
+Playlist Creator - 2020-12-23_00-43-51: Set similar song: ZAYN - Dusk Till Dawn feat Sia - Brooks Remix
+Playlist Creator - 2020-12-23_00-43-51: Adding similar for: Imagine Dragons - Thunder
+Playlist Creator - 2020-12-23_00-43-51: Still waiting to finish
+Playlist Creator - 2020-12-23_00-43-51: Finished appending all similar songs
+Playlist Creator - 2020-12-23_00-43-51: Doing Candidate Generation step
+Playlist Creator - 2020-12-23_00-43-51: Calculating weights for songs
+Playlist Creator - 2020-12-23_00-43-51: Setting weights for songs
+Playlist Creator - 2020-12-23_00-43-51: Setting weights for songs is done
