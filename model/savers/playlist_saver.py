@@ -1,5 +1,7 @@
 import json
 from pathlib import Path
+from threading import Thread
+
 import pylab as plt
 import matplotlib as mpl
 
@@ -43,6 +45,7 @@ class PlaylistSaver(ISaver):
         for song in songs:
             table += [[n, song.Popularity, song.LinkToSong]]
             y += [song.Popularity]
+            n += 1
             x += [n]
             rows += [f"{song.Artists[0]} {song.Name}"]
             result_dict["songs"][song.ID] = {
@@ -54,18 +57,34 @@ class PlaylistSaver(ISaver):
             total_time_in_ms += song.Duration
 
         result_dict["total_time_in_ms"] = total_time_in_ms
-        the_table = plt.table(cellText=table,
-                             colWidths=[0.4] * 3,
-                             rowLabels=rows,
-                             colLabels=cols,
-                             loc='center')
-        the_table.auto_set_font_size(False)
-
         result_json = json.dumps(result_dict)
         playlist_result_path.write_text(result_json)
+
+        self._show_table_graph(table, rows, cols, x, y)
+
+    def _show_table_graph(self, table, rows, cols, x, y):
+        """
+        Show the table and graph of the playlist created.
+        The graph is the id of the song to its popularity
+        :param table: table contents
+        :param rows: songs as row labels of the table
+        :param cols: cols labels of the table
+        :param x: ids of the songs
+        :param y: popularities
+        """
+        f = plt.figure(1)
+        the_table = plt.table(cellText=table,
+                              colWidths=[0.4] * 3,
+                              rowLabels=rows,
+                              colLabels=cols,
+                              loc='center')
+        the_table.auto_set_font_size(False)
         mng = plt.get_current_fig_manager()
         mng.resize(*mng.window.maxsize())
         plt.axis('off')
-        plt.show()
+        f.show()
+
+        g = plt.figure(2)
         plt.plot(x, y)
+        g.show()
         plt.show()

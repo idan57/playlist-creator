@@ -22,12 +22,10 @@ if __name__ == '__main__':
                            help="Path to genres file list")
     argparser.add_argument("-d", "--down",
                            type=int,
-                           #required=True,
                            default=0,
                            help="Minimum time for playlist")
     argparser.add_argument("-u", "--up",
                            type=int,
-                           #required=True,
                            default=180,
                            help="Maximum time for playlist")
     argparser.add_argument("-m", "--minimum_songs",

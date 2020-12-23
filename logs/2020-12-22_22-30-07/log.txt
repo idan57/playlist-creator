@@ -1,9 +1,0 @@
-Playlist Creator - 2020-12-22_22-30-07: Getting song info for: Imagine Dragons - Thunder
-Playlist Creator - 2020-12-22_22-30-08: Getting info of artist: imagine dragons
-Playlist Creator - 2020-12-22_22-30-12: Got info of artist: imagine dragons
-Playlist Creator - 2020-12-22_22-30-12: Got song info for Imagine Dragons - Thunder successfully
-Playlist Creator - 2020-12-22_22-30-12: Getting song info for: Lil Wayne - Lollipop
-Playlist Creator - 2020-12-22_22-30-12: Getting info of artist: lil wayne
-Playlist Creator - 2020-12-22_22-30-15: Got info of artist: lil wayne
-Playlist Creator - 2020-12-22_22-30-15: Got song info for Lil Wayne - Lollipop successfully
-Playlist Creator - 2020-12-22_22-30-15: Getting song info for: Metallica - Nothing Else Matters

@@ -5,14 +5,14 @@ from pathlib import Path
 
 from model.playlist_creator.playlist_creator_base import PlaylistCreatorBase
 from model.playlist_creator.playlist_modes import PlaylistModes
-from model.songs_directory.directory_reader import DerictoryReader
+from model.songs_directory.directory_reader import DirectoryReader
 from model.songs_searchers.spotify_searcher import SpotifySearcher
 
 from gekko import GEKKO
 
 
 def test_last_fm_searcher():
-    dr = DerictoryReader()
+    dr = DirectoryReader()
     songs = dr.get_songs("C:\\Users\\Idan Cohen\\Desktop\\songs")
     songs_objs = []
     client_id = '03e69fa5ec5d479a82bb066e019a722b'

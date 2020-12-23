@@ -156,7 +156,8 @@ class PlaylistCreatorBase(IPlaylistCreator):
                 optimizer.add_genres_constraint(genres, num)
         if artists:
             optimizer.add_artists_constraint(artists)
-        optimizer.add_atleast_given_songs(initial_songs, num_of_songs)
+        if num_of_songs:
+            optimizer.add_atleast_given_songs(initial_songs, num_of_songs)
         return optimizer.solve()
 
     @classmethod
