@@ -1,4 +1,6 @@
+import json
 from threading import Thread, Lock
+from urllib.request import urlopen
 
 import pycountry
 from spotipy import SpotifyClientCredentials, Spotify
@@ -294,7 +296,7 @@ class SpotifySearcher(IMusicSearcher):
         :param num_of_similar: number of requested similar songs
         :return: list of Song objects that are similar songs
         """
-        if num_of_similar == 0:
+        if num_of_similar <= 0:
             return []
 
         self.logger.info(f"Getting similar tracks for: '{artist} - {song}'")
@@ -424,14 +426,18 @@ class SpotifySearcher(IMusicSearcher):
         :return: dict of recommended songs
         """
         recommendations = None
+        url = 'http://ipinfo.io/json'
+        response = urlopen(url)
+        data = json.load(response)
+        country = data["country"]
         self._lock.acquire()
         try:
             if songs_ids:
-                recommendations = self._sp.recommendations(seed_tracks=songs_ids)
+                recommendations = self._sp.recommendations(seed_tracks=songs_ids, country=country, limit=50)
             if artists_ids:
-                recommendations = self._sp.recommendations(seed_artists=artists_ids)
+                recommendations = self._sp.recommendations(seed_artists=artists_ids, country=country, limit=50)
             if genres_list:
-                recommendations = self._sp.recommendations(seed_genres=genres_list)
+                recommendations = self._sp.recommendations(seed_genres=genres_list, country=country, limit=50)
         except Exception as e:
             self.logger.error(str(e))
             if not self._disable_exceptions:

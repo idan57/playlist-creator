@@ -99,8 +99,8 @@ class PlaylistSaver(ISaver):
             sheet.col(0).width = max_widths[0] * 500
             sheet.write(i, 0, row, style)
             for j, t_val in zip(range(1, len(t) + 1), t):
-                max_widths[j - 1] = max(max_widths[j - 1], len(str(t_val)))
-                sheet.col(j).width = max_widths[j - 1] * 500
+                max_widths[j] = max(max_widths[j], len(str(t_val)))
+                sheet.col(j).width = max_widths[j] * 500
                 sheet.write(i, j, t_val, style_c)
 
         book.save(str(self._playlist_folder / "playlist_table.xls"))

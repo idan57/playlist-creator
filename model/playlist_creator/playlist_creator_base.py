@@ -60,7 +60,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
         if append:
             self.logger.info("Appending all similar songs")
             self._append_all_similar_songs(songs)
-            self.logger.info("Finished appending all similar songs")
+            self.logger.info(f"Finished appending all similar songs, got {len(songs)} songs")
             songs = self._get_similar(songs)
 
         PlaylistCreatorBase._add_weight_to_songs(songs)
@@ -80,7 +80,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
         lock = Lock()
 
         def set_simillar_songs(name, artist, songs_list):
-            res = self._music_searcher.get_similar_tracks(name, artist)
+            res = self._music_searcher.get_similar_tracks(name, artist, num_of_similar=50)
             self.logger.info(f"Adding similar for: {artist} - {name}")
             lock.acquire()
             songs_list += res
@@ -191,6 +191,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
         actual_artists = self._get_similar(more_artists)
 
         top_tracks += self._get_top_tracks(actual_artists)
+        self.logger.info(f"Got songs top tracks for artists, got {len(top_tracks)} songs")
 
         PlaylistCreatorBase._set_weight_by_artist(top_tracks, artists)
 
@@ -268,7 +269,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
                 three += [genres_keys[j]]
             i += 3
             songs += self._music_searcher.get_songs_by_genres(genres=three)
-
+        self.logger.info(f"Got songs for genres, got {len(songs)} songs")
         return self._songs_creator(songs, append=False, genres=genres, **kwargs)
 
     def _albums_creator(self, albums, **kwargs):
@@ -283,6 +284,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
         songs = []
         for album in albums:
             songs += album.Tracks
+        self.logger.info(f"Got songs for albums, got {len(songs)} songs")
         return self._songs_creator(songs, append=False, **kwargs)
 
     @staticmethod

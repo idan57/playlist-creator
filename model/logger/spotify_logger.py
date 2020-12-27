@@ -2,6 +2,7 @@ import os
 from datetime import datetime
 from pathlib import Path
 from threading import Lock
+from time import time
 
 from model.logger import singleton
 
@@ -22,10 +23,11 @@ class Logger(object):
         timed_logs_path.mkdir()
         self._save_to = timed_logs_path / "log.txt"
         self._done_file = timed_logs_path / "done.txt"
-        self._valid_chars = [" ", "-", ":", "\n", "\r"]
+        self._valid_chars = [" ", "-", ":", "\n", "\r", "\\", "."]
         self._save_to.touch()
         self._lock = Lock()
         self._b = "-" * 100
+        self._start = time()
 
     def _write_to_log(self, msg):
         """
@@ -81,6 +83,7 @@ class Logger(object):
         """
         Creating a file to mark the playlist creation as done
         """
+        self.beautiful_info(f"Finished in {(time() - self._start) / 60} minutes")
         self._done_file.touch()
 
     def beautiful_info(self, msg):
