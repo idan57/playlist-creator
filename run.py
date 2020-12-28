@@ -32,5 +32,9 @@ if __name__ == '__main__':
                            type=int,
                            default=0,
                            help="Minimum songs required from input")
+    argparser.add_argument("-c", "--country",
+                           type=str,
+                           default="United States",
+                           help="Country name to base playlist on")
     runner.run(argparser.parse_args())
     Logger().done()

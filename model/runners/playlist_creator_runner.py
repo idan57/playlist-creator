@@ -32,15 +32,22 @@ class PlaylistCreatorRunner(IRunner):
             mode = PlaylistModes.SONGS
         if args.albums_list:
             with open(args.albums_list, 'r') as f:
-                albums = f.readlines()
+                albums_lines = f.readlines()
+            albums = []
+            for album_n_artist in albums_lines:
+                album, artist = album_n_artist.replace("\n", "").split()
+                albums += [searcher.get_album_info(album, artist)]
             if mode == -1:
                 mode = PlaylistModes.ALBUMS
         if args.artists_list:
             with open(args.artists_list, 'r') as f:
-                artists = f.readlines()
+                artists_lines = f.readlines()
+            artists = []
+            for artist in artists_lines:
+                artist = artist.replace("\n", "")
+                artists += [searcher.get_artist_info(artist)]
             if mode == -1:
                 mode = PlaylistModes.ARTISTS
-
         if args.genres_list:
             with open(args.genres_list, 'r') as f:
                 genres = json.load(f)
@@ -50,7 +57,7 @@ class PlaylistCreatorRunner(IRunner):
         min_songs = args.minimum_songs
         min_time = args.down * 60
         max_time = args.up * 60
-        p = PlaylistCreatorBase(searcher, mode=mode)
+        p = PlaylistCreatorBase(searcher, mode=mode, country=args.country)
         res = []
         msg = "Playlist Creation Step: \n"
         if mode == PlaylistModes.SONGS:
@@ -59,8 +66,12 @@ class PlaylistCreatorRunner(IRunner):
             res = p.create_playlist(songs, min_time=min_time, max_time=max_time, genres=genres,
                                     artists=artists, num_of_songs=min_songs)
         if mode == PlaylistModes.ARTISTS:
-            self._logger.beautiful_info(f"-- ARTISTS --\n{msg} Minimum Time: {min_time}\n Maximum Time: {max_time}\n"
-                                        f" Genres: {', '.join(genres)}\n")
+            if genres:
+                self._logger.beautiful_info(f"-- ARTISTS --\n{msg} Minimum Time: {min_time}\n Maximum Time: {max_time}\n"
+                                            f" Genres: {', '.join(genres)}\n")
+            else:
+                self._logger.beautiful_info(
+                    f"-- ARTISTS --\n{msg} Minimum Time: {min_time}\n Maximum Time: {max_time}\n")
             res = p.create_playlist(artists, min_time=min_time, max_time=max_time, genres=genres)
         if mode == PlaylistModes.GENRES:
             self._logger.beautiful_info(f"-- GENRES --{msg} Minimum Time: {min_time}\n Maximum Time: {max_time}\n")

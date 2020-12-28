@@ -40,25 +40,25 @@ class PlaylistSaver(ISaver):
         x = []
         rows = []
         table = []
-        total_time_in_ms = 0
+        total_time_in_minute = 0
         n = 0
         for song in songs:
-            link = artist.Artist()
             table += [[n, song.Popularity, song.LinkToSong]]
             y += [song.Popularity]
             n += 1
             x += [n]
             ar = song.Artists[0].replace("$", "")
-            rows += [f"{ar} - {song.Name}"]
-            result_dict["songs"][song.ID] = {
-                "artists": song.Artists,
-                "name": song.Name,
-                "link": song.LinkToSong,
-                "popularity": song.Popularity
-            }
-            total_time_in_ms += song.Duration
+            if f"{ar} - {song.Name}" not in rows:
+                rows += [f"{ar} - {song.Name}"]
+                result_dict["songs"][song.ID] = {
+                    "artists": song.Artists,
+                    "name": song.Name,
+                    "link": song.LinkToSong,
+                    "popularity": song.Popularity
+                }
+                total_time_in_minute += song.Duration
 
-        result_dict["total_time_in_ms"] = total_time_in_ms
+        result_dict["total_time_in_minute"] = total_time_in_minute
         result_json = json.dumps(result_dict, indent=4, sort_keys=True)
         playlist_result_path.write_text(result_json)
 

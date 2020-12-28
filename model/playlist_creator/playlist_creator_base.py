@@ -16,7 +16,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
     A class that gets a music song and creates a playlist from it in various ways.
     """
 
-    def __init__(self, music_searcher, mode=PlaylistModes.SONGS, num_of_can=50):
+    def __init__(self, music_searcher, mode=PlaylistModes.SONGS, num_of_can=50, country="US"):
         """
         :param music_searcher: A IMusicSearcher object
         :param mode: mode to create a playlist by
@@ -25,6 +25,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
         self._music_searcher = music_searcher
         self.logger = Logger()
         self._num_of_can = num_of_can
+        self._country = country
 
     def create_playlist(self, music_source, **kwargs):
         """
@@ -120,7 +121,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
             val.sort(key=lambda x: x.Popularity, reverse=True)
             val_len = len(val)
             for i in range(val_len):
-                val[i].set_weight(val[i].Weight + (val_len - i) / val_len)
+                val[i].set_weight(val[i].Weight + ((val_len - i) / val_len) * val[i].Popularity)
 
     @staticmethod
     def _optimize_weight(songs):
@@ -133,7 +134,8 @@ class PlaylistCreatorBase(IPlaylistCreator):
         if len(songs) < 30:
             return songs
         songs.sort(key=lambda x: x.Weight, reverse=True)
-        return songs[:30]
+        third = int(len(songs) * (1 / 3))
+        return songs[:third]
 
     @staticmethod
     def _optimize_popularity(songs, min_time, max_time, genres, artists, initial_songs, num_of_songs):
@@ -207,7 +209,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
         lock = Lock()
 
         def set_top_tracks(name):
-            res = self._music_searcher.get_artists_top_tracks(name)
+            res = self._music_searcher.get_artists_top_tracks(name, country=self._country)
             Logger().info(f"Adding similar for: {name}")
             lock.acquire()
             tracks = set_top_tracks.__getattribute__("tracks")

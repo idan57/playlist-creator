@@ -4,6 +4,7 @@ from urllib.request import urlopen
 
 import pycountry
 from spotipy import SpotifyClientCredentials, Spotify
+import country_converter
 
 from model.logger.spotify_logger import Logger
 from model.music_objs.album import Album
@@ -252,7 +253,7 @@ class SpotifySearcher(IMusicSearcher):
 
         return res
 
-    def get_artists_top_tracks(self, artist, country="US"):
+    def get_artists_top_tracks(self, artist, country="united states"):
         """
         Get top tracks for artist in a given country.
 
@@ -368,7 +369,7 @@ class SpotifySearcher(IMusicSearcher):
         if limit > 50:
             raise Exception(f"The limit '{limit}' is not supported. Maximum value for limit is 50!")
 
-        country = pycountry.countries.get(name=country)
+        country = country_converter.convert(names=[country], to="ISO2")[0]
         if country is None:
             return
         country_code = country.alpha_2
@@ -534,5 +535,4 @@ class SpotifySearcher(IMusicSearcher):
         :param country: country name
         :return: country code
         """
-        country_obj = pycountry.countries.get(country)
-        return country_obj.alpha_2
+        return country_converter.convert(names=[country], to="ISO2")
