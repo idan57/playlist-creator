@@ -12,15 +12,16 @@ class AvgRatingOptimizer(object):
         self.songs = songs
         self.m = GEKKO()
         self.songs_vars = [self.m.Var(lb=0, ub=1, integer=True) for i in range(len(songs))]
+        self._sum_songs_var = self.m.sum(self.songs_vars)
         self.popularity_params = [self.m.Param(song.Popularity) for song in songs]
-        self.avg_popularity = self.m.sum([(song_para * s_var) /
-                                          max(1, sum([song.VALUE.value for song in self.songs_vars]))
+        exist_param = [self.m.Param(1) for _ in songs]
+        self.avg_popularity = self.m.sum([(song_para * s_var) / self.m.max2(1, self._sum_songs_var)
                                           for s_var, song_para in zip(self.songs_vars, self.popularity_params)])
         duration_params = [self.m.Param(song.Duration) for song in self.songs]
         self.sum_time = self.m.sum([song_para * s_var for s_var, song_para in zip(self.songs_vars, duration_params)])
         self.sum_genre = None
         self.sum_atleast = None
-        self._equatations = []
+        self._equatations = [self.m.sum([song * exist for song, exist in zip(self.songs_vars, exist_param)]) == self._sum_songs_var]
 
     def add_min_time_constraint(self, min_time):
         """

@@ -58,7 +58,7 @@ class PlaylistSaver(ISaver):
                 }
                 total_time_in_minute += song.Duration
 
-        result_dict["total_time_in_minute"] = total_time_in_minute
+        result_dict["total_time_in_minute"] = total_time_in_minute / 60
         result_json = json.dumps(result_dict, indent=4, sort_keys=True)
         playlist_result_path.write_text(result_json)
 

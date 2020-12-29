@@ -1,0 +1,46 @@
+{
+    "songs": {
+        "27RYrbL6S02LNVhDWVl38b": {
+            "artists": [
+                "John Lennon",
+                "Yoko Ono"
+            ],
+            "link": "https://open.spotify.com/track/27RYrbL6S02LNVhDWVl38b",
+            "name": "Happy Xmas (War Is Over) - Remastered 2010",
+            "popularity": 92
+        },
+        "2xGO2UjzxeVQSIkyg98vck": {
+            "artists": [
+                "Queen"
+            ],
+            "link": "https://open.spotify.com/track/2xGO2UjzxeVQSIkyg98vck",
+            "name": "Thank God It's Christmas - Non-Album Single",
+            "popularity": 82
+        },
+        "4u7EnebtmKWzUH433cf5Qv": {
+            "artists": [
+                "Queen"
+            ],
+            "link": "https://open.spotify.com/track/4u7EnebtmKWzUH433cf5Qv",
+            "name": "Bohemian Rhapsody - Remastered 2011",
+            "popularity": 84
+        },
+        "5CQ30WqJwcep0pYcV4AMNc": {
+            "artists": [
+                "Led Zeppelin"
+            ],
+            "link": "https://open.spotify.com/track/5CQ30WqJwcep0pYcV4AMNc",
+            "name": "Stairway to Heaven - Remaster",
+            "popularity": 79
+        },
+        "6sBWmE23q6xQHlnEZ8jYPT": {
+            "artists": [
+                "Elton John"
+            ],
+            "link": "https://open.spotify.com/track/6sBWmE23q6xQHlnEZ8jYPT",
+            "name": "Step Into Christmas",
+            "popularity": 87
+        }
+    },
+    "total_time_in_minute": 26.42503333333333
+}
