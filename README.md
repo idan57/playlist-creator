@@ -2,6 +2,8 @@
 ## Overview
 Our API is was created as part of the course "Introduction to Optimization" with Ariel Rosenfeld at Bar-Ilan University.
 
+You should run the following with the flags below: python  {PATH TO SITE-PACKAGES}/playlist-creator/run.py 
+
 You are able to run our API by providing the following as args:
 
 -h, --help            show this help message and exit \
@@ -12,7 +14,7 @@ You are able to run our API by providing the following as args:
 -d DOWN, --down DOWN  Minimum time for playlist \
 -u UP, --up UP        Maximum time for playlist \
 -m MINIMUM_SONGS, --minimum_songs MINIMUM_SONGS Minimum songs required from input\
--c COUNTRY, --country COUNTRY  Country name to base playlist on \
+-c COUNTRY, --country COUNTRY  Country name to base playlist on
 
 ### SONGS_PATH
 Should be a path to songs in the following format: "ARTIST NAME - SONG NAME"
