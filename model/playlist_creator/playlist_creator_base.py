@@ -155,7 +155,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
         optimizer.add_max_time_constraint(max_time)
         if genres:
             for genre, num in genres.items():
-                optimizer.add_genres_constraint(genres, num)
+                optimizer.add_genres_constraint(genre, num)
         if artists:
             optimizer.add_artists_constraint(artists)
         if num_of_songs:

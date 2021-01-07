@@ -1,46 +1,63 @@
 {
     "songs": {
-        "27RYrbL6S02LNVhDWVl38b": {
+        "09IStsImFySgyp0pIQdqAc": {
             "artists": [
-                "John Lennon",
-                "Yoko Ono"
+                "Zedd",
+                "Maren Morris",
+                "Grey"
             ],
-            "link": "https://open.spotify.com/track/27RYrbL6S02LNVhDWVl38b",
-            "name": "Happy Xmas (War Is Over) - Remastered 2010",
-            "popularity": 92
-        },
-        "2xGO2UjzxeVQSIkyg98vck": {
-            "artists": [
-                "Queen"
-            ],
-            "link": "https://open.spotify.com/track/2xGO2UjzxeVQSIkyg98vck",
-            "name": "Thank God It's Christmas - Non-Album Single",
-            "popularity": 82
-        },
-        "4u7EnebtmKWzUH433cf5Qv": {
-            "artists": [
-                "Queen"
-            ],
-            "link": "https://open.spotify.com/track/4u7EnebtmKWzUH433cf5Qv",
-            "name": "Bohemian Rhapsody - Remastered 2011",
+            "link": "https://open.spotify.com/track/09IStsImFySgyp0pIQdqAc",
+            "name": "The Middle",
             "popularity": 84
         },
-        "5CQ30WqJwcep0pYcV4AMNc": {
+        "0SiywuOBRcynK0uKGWdCnn": {
             "artists": [
-                "Led Zeppelin"
+                "Lady Gaga"
             ],
-            "link": "https://open.spotify.com/track/5CQ30WqJwcep0pYcV4AMNc",
-            "name": "Stairway to Heaven - Remaster",
+            "link": "https://open.spotify.com/track/0SiywuOBRcynK0uKGWdCnn",
+            "name": "Bad Romance",
+            "popularity": 83
+        },
+        "2ekn2ttSfGqwhhate0LSR0": {
+            "artists": [
+                "Dua Lipa"
+            ],
+            "link": "https://open.spotify.com/track/2ekn2ttSfGqwhhate0LSR0",
+            "name": "New Rules",
+            "popularity": 82
+        },
+        "4G92yYrUs0cvY7G41YRI0z": {
+            "artists": [
+                "Labrinth"
+            ],
+            "link": "https://open.spotify.com/track/4G92yYrUs0cvY7G41YRI0z",
+            "name": "Jealous",
             "popularity": 79
         },
-        "6sBWmE23q6xQHlnEZ8jYPT": {
+        "5QTxFnGygVM4jFQiBovmRo": {
             "artists": [
-                "Elton John"
+                "Blue \u00d6yster Cult"
             ],
-            "link": "https://open.spotify.com/track/6sBWmE23q6xQHlnEZ8jYPT",
-            "name": "Step Into Christmas",
-            "popularity": 87
+            "link": "https://open.spotify.com/track/5QTxFnGygVM4jFQiBovmRo",
+            "name": "(Don't Fear) The Reaper",
+            "popularity": 78
+        },
+        "7HKez549fwJQDzx3zLjHKC": {
+            "artists": [
+                "The Rolling Stones"
+            ],
+            "link": "https://open.spotify.com/track/7HKez549fwJQDzx3zLjHKC",
+            "name": "Start Me Up - Remastered",
+            "popularity": 79
+        },
+        "7fcfNW0XxTWlwVlftzfDOR": {
+            "artists": [
+                "Pantera"
+            ],
+            "link": "https://open.spotify.com/track/7fcfNW0XxTWlwVlftzfDOR",
+            "name": "Walk",
+            "popularity": 75
         }
     },
-    "total_time_in_minute": 26.42503333333333
+    "total_time_in_minute": 30.210399999999996
 }

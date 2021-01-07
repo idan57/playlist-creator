@@ -3,7 +3,6 @@ from pathlib import Path
 
 import pylab as plt
 import xlwt
-from matplotlib import artist
 
 from model.savers.saver_interface import ISaver
 

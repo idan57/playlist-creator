@@ -2,7 +2,6 @@ import json
 from threading import Thread, Lock
 from urllib.request import urlopen
 
-import pycountry
 from spotipy import SpotifyClientCredentials, Spotify
 import country_converter
 
@@ -100,7 +99,7 @@ class SpotifySearcher(IMusicSearcher):
         self._lock.acquire()
 
         try:
-            tracks = self._sp.search(album, limit=50)["tracks"]["items"]
+            tracks = self._sp.search(f"{artist} {album}", limit=50)["tracks"]["items"]
         except Exception as e:
             self.logger.error(str(e))
             if not self._disable_exceptions:
@@ -123,8 +122,6 @@ class SpotifySearcher(IMusicSearcher):
 
         if res:
             artist_obj = self._get_artist_from_list(res["artists"], artist)
-            SpotifySearcher.CACHE_LOCK.acquire()
-            SpotifySearcher.CACHE_LOCK.release()
             SpotifySearcher._set_genre(res, artist_obj)
             self._set_tracks_for_album(res, artist_obj)
             album_res = Album(res)

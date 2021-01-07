@@ -35,7 +35,7 @@ class PlaylistCreatorRunner(IRunner):
                 albums_lines = f.readlines()
             albums = []
             for album_n_artist in albums_lines:
-                album, artist = album_n_artist.replace("\n", "").split()
+                album, artist = album_n_artist.replace("\n", "").split(",")
                 albums += [searcher.get_album_info(album, artist)]
             if mode == -1:
                 mode = PlaylistModes.ALBUMS
