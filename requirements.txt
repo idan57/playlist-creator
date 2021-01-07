@@ -1,0 +1,7 @@
+numpy
+gekko
+matplotlib
+xlwt
+mutagen
+spotipy
+country-converter
