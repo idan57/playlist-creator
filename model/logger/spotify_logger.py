@@ -83,7 +83,8 @@ class Logger(object):
         """
         Creating a file to mark the playlist creation as done
         """
-        self.beautiful_info(f"Finished in {(time() - self._start) / 60} minutes ({datetime.now().strftime('%Y-%m-%d_%H-%M-%S')})")
+        self.beautiful_info(f"Finished in {(time() - self._start) / 60} minutes (" + datetime.now().strftime(
+            '%Y-%m-%d---%H-%M-%S') + ")")
         self._done_file.touch()
 
     def beautiful_info(self, msg):

@@ -57,6 +57,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
         :return:
         """
         self.logger.info("Creating playlist by songs...")
+        self.logger.beautiful_info(f"Optimizing {len(songs)} songs!!!")
         prev_song_len = len(songs)
         if append:
             self.logger.info("Appending all similar songs")
@@ -185,12 +186,16 @@ class PlaylistCreatorBase(IPlaylistCreator):
         :param kwargs: any argument required for creating playlist by songs
         :return: playlist
         """
+        artists = [a for a in artists if a is not None]
+        self.logger.beautiful_info(f"Optimizing {len(artists)} artists!!!")
         top_tracks = self._get_top_tracks(artists)
         artists_names = [ar.Name for ar in artists]
 
         more_artists = self._get_more_artists(top_tracks, artists_names)
 
+        more_artists = [a for a in more_artists if a is not None]
         actual_artists = self._get_similar(more_artists)
+        actual_artists = [a for a in actual_artists if a is not None]
 
         top_tracks += self._get_top_tracks(actual_artists)
         self.logger.info(f"Got songs top tracks for artists, got {len(top_tracks)} songs")
@@ -300,9 +305,10 @@ class PlaylistCreatorBase(IPlaylistCreator):
         """
         threads = []
         for item in list_to_run:
-            th = Thread(target=target, args=args_method(item, list_to_run))
-            th.start()
-            threads += [th]
+            if item:
+                th = Thread(target=target, args=args_method(item, list_to_run))
+                th.start()
+                threads += [th]
 
         for t in threads:
             t.join(timeout=2400)
