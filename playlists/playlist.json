@@ -1,63 +1,69 @@
 {
     "songs": {
-        "09IStsImFySgyp0pIQdqAc": {
+        "0SDreL2rSonLjgJKmhsEHD": {
             "artists": [
-                "Zedd",
-                "Maren Morris",
-                "Grey"
+                "The Zabari Brothers"
             ],
-            "link": "https://open.spotify.com/track/09IStsImFySgyp0pIQdqAc",
-            "name": "The Middle",
-            "popularity": 84
+            "link": "https://open.spotify.com/track/0SDreL2rSonLjgJKmhsEHD",
+            "name": "\u05d0\u05d5\u05e8\u05d8\u05dc \u05e7\u05d5\u05de\u05d1\u05d0\u05d8",
+            "popularity": 23
         },
-        "0SiywuOBRcynK0uKGWdCnn": {
+        "1YHESGkQExxy2tasFSv9xz": {
             "artists": [
-                "Lady Gaga"
+                "The Zabari Brothers"
             ],
-            "link": "https://open.spotify.com/track/0SiywuOBRcynK0uKGWdCnn",
-            "name": "Bad Romance",
-            "popularity": 83
+            "link": "https://open.spotify.com/track/1YHESGkQExxy2tasFSv9xz",
+            "name": "\u05e9\u05d9\u05e8\u05d5 \u05e9\u05dc \u05e9\u05e4\u05e9\u05e3",
+            "popularity": 23
         },
-        "2ekn2ttSfGqwhhate0LSR0": {
+        "2cmsMxXskoTbeFgVEEQcPQ": {
             "artists": [
-                "Dua Lipa"
+                "The Zabari Brothers"
             ],
-            "link": "https://open.spotify.com/track/2ekn2ttSfGqwhhate0LSR0",
-            "name": "New Rules",
-            "popularity": 82
+            "link": "https://open.spotify.com/track/2cmsMxXskoTbeFgVEEQcPQ",
+            "name": "\u05d0\u05d9\u05dc\u05ea",
+            "popularity": 20
         },
-        "4G92yYrUs0cvY7G41YRI0z": {
+        "2ygNRdHnuDLLdNXCPT25wa": {
             "artists": [
-                "Labrinth"
+                "The Zabari Brothers"
             ],
-            "link": "https://open.spotify.com/track/4G92yYrUs0cvY7G41YRI0z",
-            "name": "Jealous",
-            "popularity": 79
+            "link": "https://open.spotify.com/track/2ygNRdHnuDLLdNXCPT25wa",
+            "name": "\u05d2\u05f3\u05d9\u05e0\u05d9 \u05d4\u05e8\u05e8\u05d9",
+            "popularity": 24
         },
-        "5QTxFnGygVM4jFQiBovmRo": {
+        "3Pjiw1BvC9DH9YEUK6BLq7": {
             "artists": [
-                "Blue \u00d6yster Cult"
+                "The Zabari Brothers"
             ],
-            "link": "https://open.spotify.com/track/5QTxFnGygVM4jFQiBovmRo",
-            "name": "(Don't Fear) The Reaper",
-            "popularity": 78
+            "link": "https://open.spotify.com/track/3Pjiw1BvC9DH9YEUK6BLq7",
+            "name": "\u05e2\u05d5\u05d3 \u05d9\u05d5\u05dd \u05d1\u05de\u05d2\u05e8\u05e9",
+            "popularity": 19
         },
-        "7HKez549fwJQDzx3zLjHKC": {
+        "4zQfOMCsOiVzsxUIE241Af": {
             "artists": [
-                "The Rolling Stones"
+                "The Zabari Brothers"
             ],
-            "link": "https://open.spotify.com/track/7HKez549fwJQDzx3zLjHKC",
-            "name": "Start Me Up - Remastered",
-            "popularity": 79
+            "link": "https://open.spotify.com/track/4zQfOMCsOiVzsxUIE241Af",
+            "name": "\u05d1\u05e9\u05d9\u05e0\u05d5\u05d9 \u05d0\u05d3\u05e8\u05ea",
+            "popularity": 22
         },
-        "7fcfNW0XxTWlwVlftzfDOR": {
+        "6jHnB14bfBLgnVao5EO35E": {
             "artists": [
-                "Pantera"
+                "The Zabari Brothers"
             ],
-            "link": "https://open.spotify.com/track/7fcfNW0XxTWlwVlftzfDOR",
-            "name": "Walk",
-            "popularity": 75
+            "link": "https://open.spotify.com/track/6jHnB14bfBLgnVao5EO35E",
+            "name": "\u05d4\u05d7\u05d5\u05dc\u05d5\u05ea \u05e9\u05dc \u05d4\u05de\u05d3\u05d5\u05e8\u05d5\u05ea",
+            "popularity": 24
+        },
+        "7zDZTjaWTijJFBO9VahWq7": {
+            "artists": [
+                "The Zabari Brothers"
+            ],
+            "link": "https://open.spotify.com/track/7zDZTjaWTijJFBO9VahWq7",
+            "name": "\u05ea\u05de\u05d0\u05e9",
+            "popularity": 25
         }
     },
-    "total_time_in_minute": 30.210399999999996
+    "total_time_in_minute": 15.759033333333331
 }
