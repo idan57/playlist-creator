@@ -63,6 +63,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
             self.logger.info("Appending all similar songs")
             self._append_all_similar_songs(songs)
             self.logger.info(f"Finished appending all similar songs, got {len(songs)} songs")
+            self._num_of_can = (2 / 3) * len(songs)
             songs = self._get_similar(songs)
 
         PlaylistCreatorBase._add_weight_to_songs(songs)
@@ -82,11 +83,13 @@ class PlaylistCreatorBase(IPlaylistCreator):
         lock = Lock()
 
         def set_simillar_songs(name, artist, songs_list):
-            res = self._music_searcher.get_similar_tracks(name, artist, num_of_similar=50)
-            self.logger.info(f"Adding similar for: {artist} - {name}")
-            lock.acquire()
-            songs_list += res
-            lock.release()
+            try:
+                res = self._music_searcher.get_similar_tracks(name, artist, num_of_similar=50)
+                self.logger.info(f"Adding similar for: {artist} - {name}")
+                lock.acquire()
+                songs_list += res
+            finally:
+                lock.release()
 
         PlaylistCreatorBase._run_in_thread_loop(songs, target=set_simillar_songs,
                                                 args_method=lambda song, songs_list: (song.Name, song.Artists[0],
@@ -311,7 +314,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
                 threads += [th]
 
         for t in threads:
-            t.join(timeout=2400)
+            t.join()
             Logger().info("Still waiting to finish...")
 
     def _get_similar(self, music_source):
