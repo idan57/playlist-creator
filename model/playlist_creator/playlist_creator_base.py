@@ -58,20 +58,22 @@ class PlaylistCreatorBase(IPlaylistCreator):
         """
         self.logger.info("Creating playlist by songs...")
         self.logger.beautiful_info(f"Optimizing {len(songs)} songs!!!")
-        prev_song_len = len(songs)
+        initial_songs = [s for s in songs]
         if append:
             self.logger.info("Appending all similar songs")
             self._append_all_similar_songs(songs)
             self.logger.info(f"Finished appending all similar songs, got {len(songs)} songs")
-            self._num_of_can = (2 / 3) * len(songs)
+            self._num_of_can = int((2 / 3) * len(songs))
             songs = self._get_similar(songs)
 
         PlaylistCreatorBase._add_weight_to_songs(songs)
 
         songs = PlaylistCreatorBase._optimize_weight(songs)
+        if self._mode == PlaylistModes.SONGS:
+            songs += [s for s in initial_songs if s not in songs]
 
-        return PlaylistCreatorBase._optimize_popularity(songs, min_time, max_time,
-                                                        genres, artists, songs[:prev_song_len], num_of_songs)
+        return PlaylistCreatorBase._optimize_popularity(songs + initial_songs, min_time, max_time,
+                                                        genres, artists, initial_songs, num_of_songs)
 
     def _append_all_similar_songs(self, songs):
         """
@@ -138,7 +140,7 @@ class PlaylistCreatorBase(IPlaylistCreator):
         if len(songs) < 30:
             return songs
         songs.sort(key=lambda x: x.Weight, reverse=True)
-        third = int(len(songs) * (1 / 3))
+        third = int(len(songs) * (2 / 3))
         return songs[:third]
 
     @staticmethod

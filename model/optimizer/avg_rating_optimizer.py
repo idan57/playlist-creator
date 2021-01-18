@@ -53,7 +53,7 @@ class AvgRatingOptimizer(object):
         :param artists: artists names
         """
         for artist in artists:
-            artist_params = [self.m.Param(1) if artist in song.Artists else self.m.Param(0) for song in
+            artist_params = [self.m.Param(1) if artist.Name in song.Artists else self.m.Param(0) for song in
                              self.songs]
             sum_artist = self.m.sum(
                 [s_var * art for s_var, art in zip(self.songs_vars, artist_params)])
